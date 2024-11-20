@@ -1,0 +1,8 @@
+fastapi
+fastapi[standard]
+groq
+uvicorn
+fastapi-cors
+redis[hiredis]
+redis
+python-dotenv
