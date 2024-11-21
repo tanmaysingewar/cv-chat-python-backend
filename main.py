@@ -16,11 +16,14 @@ from pathlib import Path
 dotenv_path = Path('.env')
 load_dotenv(dotenv_path=dotenv_path)
 
+from supabase import create_client, Client
+
 from functions.groq_fun import call_groq_api
 from functions.get_key_value_pairs import get_key_value_pairs
 from functions.get_relative_info import get_relative_info
 from functions.save_to_redis import save_to_redis
 from functions.get_response_by_bot import get_response_by_bot
+from functions.log_to_supabase import log_to_supabase
 
 app = FastAPI()
 
@@ -41,6 +44,12 @@ redis_client = redis.Redis(
   ssl=True,
   db=0
 )
+
+# Supabase connection details
+SUPABASE_URL = os.getenv("SUPABASE_URL")  # Replace with your Supabase project URL
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")  # Replace with your Supabase API key
+
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 class QuestionRequest(BaseModel):
     question: Union[str, None] = None
@@ -70,10 +79,10 @@ async def cv_chat(request: QuestionRequest,background_tasks: BackgroundTasks):
         else:
             return {"error": "Bot response format is invalid"}
 
-        # Save bot response to Redis asynchronously
+        # Save bot response asynchronously
         background_tasks.add_task(save_to_redis, response_data, redis_client,relative_info,request.personality)
+        background_tasks.add_task(log_to_supabase,supabase,request.question,response_data,cit,drt,bot_response["rgt"],request.personality,request.llm)
 
-        # Get bot response with timing metrics
         return bot_response
     
     except Exception as e:

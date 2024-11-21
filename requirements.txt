@@ -6,3 +6,4 @@ fastapi-cors
 redis[hiredis]
 redis
 python-dotenv
+supabase
