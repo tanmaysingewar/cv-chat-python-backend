@@ -81,7 +81,7 @@ async def cv_chat(request: QuestionRequest,background_tasks: BackgroundTasks):
 
         # Save bot response asynchronously
         background_tasks.add_task(save_to_redis, response_data, redis_client,relative_info,request.personality)
-        background_tasks.add_task(log_to_supabase,supabase,request.question,response_data,cit,drt,bot_response["rgt"],request.personality,request.llm)
+        background_tasks.add_task(log_to_supabase,supabase,request.question,response_data,cit,drt,bot_response["rgt"],request.personality,request.llm,relative_info)
 
         return bot_response
     

@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def log_to_supabase(supabase,user_question, bot_response, cit=None, drt=None, rgt=None, personality=None, llm=None):
+def log_to_supabase(supabase,user_question, bot_response, cit=None, drt=None, rgt=None, personality=None, llm=None,relative_info=None):
     try:
         # Prepare data to insert
         data = {
@@ -11,6 +11,7 @@ def log_to_supabase(supabase,user_question, bot_response, cit=None, drt=None, rg
             "rgt": rgt,
             "personality": personality,
             "llm": llm,
+            "relative_data" : relative_info,
             "timestamp": datetime.utcnow().isoformat()  # ISO format for timestamp
         }
 
