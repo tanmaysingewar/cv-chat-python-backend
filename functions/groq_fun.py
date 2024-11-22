@@ -3,7 +3,7 @@ from groq import Groq
 
 # Initialize the Groq client
 client = Groq(
-    api_key="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"  # Replace with your actual API key
+    api_key="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"  # Replace with your actual API key
 )
 
 # Function to call Groq API with LLAMA 3 model
