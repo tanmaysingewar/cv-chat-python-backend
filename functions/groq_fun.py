@@ -1,27 +1,39 @@
+import requests
+import os
+from fastapi.responses import JSONResponse
 
-from groq import Groq
+from dotenv import load_dotenv
+load_dotenv()
 
-# Initialize the Groq client
-client = Groq(
-    api_key="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"  # Replace with your actual API key
-)
+url = "https://api.perplexity.ai/chat/completions"
 
-# Function to call Groq API with LLAMA 3 model
-def call_groq_api(prompt, model="llama-3.1-70b-versatile"):
-    try:
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt,
-                }
-            ],
-            model=model,
-        )
-        return chat_completion.choices[0].message.content
-    except Exception as e:
-        print(f"Error calling Groq API: {e}")
-        return None
+def call_groq_api(prompt):
+    payload = {
+        "model": "llama-3.1-sonar-large-128k-online",
+        "messages": [
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
+    }
+    headers = {
+        "accept": "application/json",
+        "content-type": "application/json",
+        "authorization": f"Bearer {os.getenv('PERPLEXITY_API_KEY')}"
+    }
+
+    response = requests.post(url, json=payload, headers=headers)
+
+    if response.status_code == 200:
+        json_response = response.json()
+        return json_response.get("choices")[0].get("message").get("content")
+    elif response.status_code == 429:
+        return response.status_code
+    elif response.status_code == 400:
+        return response.status_code
+    else:
+        return False
 
 _all_ = [
     "call_groq_api"
