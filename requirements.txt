@@ -9,3 +9,4 @@ python-dotenv
 supabase
 
 requests
+openai>=1.0.0

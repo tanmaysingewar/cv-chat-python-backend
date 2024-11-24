@@ -4,36 +4,30 @@ from fastapi.responses import JSONResponse
 
 from dotenv import load_dotenv
 load_dotenv()
+from openai import OpenAI
 
-url = "https://api.perplexity.ai/chat/completions"
+def call_groq_api(prompt,model="meta-llama/llama-3.1-70b-instruct"):
+    client = OpenAI(
+        base_url="https://api.novita.ai/v3/openai",
+        # Get the Novita AI API Key by referring to: https://novita.ai/docs/get-started/quickstart.html#_2-manage-api-key.
+        api_key= os.getenv("NOVITA_API_KEY"),
+    )
 
-def call_groq_api(prompt,model="llama-3.1-sonar-large-128k-online"):
-    payload = {
-        "model": "llama-3.1-sonar-large-128k-online",
-        "messages": [
-            {
+    model = "meta-llama/llama-3.1-70b-instruct"
+    stream = False 
+
+    chat_completion_res = client.chat.completions.create(
+        model=model,
+        messages=[
+             {
                 "role": "user",
                 "content": prompt
             }
-        ]
-    }
-    headers = {
-        "accept": "application/json",
-        "content-type": "application/json",
-        "authorization": f"Bearer {os.getenv('PERPLEXITY_API_KEY')}"
-    }
+        ],
+        stream=stream,
+    )
 
-    response = requests.post(url, json=payload, headers=headers)
-
-    if response.status_code == 200:
-        json_response = response.json()
-        return json_response.get("choices")[0].get("message").get("content")
-    elif response.status_code == 429:
-        return response.status_code
-    elif response.status_code == 400:
-        return response.status_code
-    else:
-        return False
+    return chat_completion_res.choices[0].message.content
 
 _all_ = [
     "call_groq_api"
