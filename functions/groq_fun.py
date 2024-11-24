@@ -7,7 +7,7 @@ load_dotenv()
 
 url = "https://api.perplexity.ai/chat/completions"
 
-def call_groq_api(prompt):
+def call_groq_api(prompt,model="llama-3.1-sonar-large-128k-online"):
     payload = {
         "model": "llama-3.1-sonar-large-128k-online",
         "messages": [

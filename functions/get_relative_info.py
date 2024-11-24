@@ -19,8 +19,9 @@ def get_relative_info(question,r,personality):
             - tasks: Questions about specific actions or plans.
             - goals: Questions about objectives, aspirations, or future plans.
             - preferences: Questions about personal choices or inclinations.
-            - opinions: Questions requesting personal thoughts or views.
+            - opinions: Questions requesting personal views.
             - habits: Questions about routines, patterns, or regular actions.
+            - thoughts: Questions that require reflection or self-evaluation.
         
         - If the question belongs to any of the categories above, respond with the corresponding category. 
         - If the question does not belong to any category, respond with NO.

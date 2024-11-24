@@ -20,6 +20,7 @@ def get_key_value_pairs(response,relative_info):
             - preferences: Response about personal choices or inclinations.
             - opinions: Response requesting personal thoughts or views.
             - habits: Response about routines, patterns, or regular actions.
+            - thoughts: Questions that require reflection or self-evaluation.
         ## Guidelines for Response Processing:
         - Verify Existing Information: Before adding a key-value pair, check the provided relativeInfo to ensure the information does not already exist.
         - Format Consistently:Ensure the response is converted into a concise, consistent format while retaining its original meaning.
