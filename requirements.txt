@@ -10,3 +10,5 @@ supabase
 
 requests
 openai>=1.0.0
+
+logging

@@ -1,0 +1,550 @@
+22:47:31,38 watchfiles.main INFO 1 change detected
+22:47:38,834 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:41,217 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:41,219 root INFO Question: HEy
+22:47:41,220 root INFO Last 3 Responses: 
+22:47:41,220 root INFO Relative Info: 
+22:47:41,220 root INFO Response: Kaise ho? What's up? 😊
+22:47:43,50 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:44,627 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:47,46 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:47,48 root INFO Question: hey
+22:47:47,48 root INFO Last 3 Responses: Conversation 1:
+User: HEy
+Bot: Kaise ho? What's up? 😊
+22:47:47,49 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+22:47:47,49 root INFO Response: Kya haal hai, just soaking in the Delhi energy at Cirrus 9! 😊
+22:47:47,414 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:47:47,422 root INFO Logged to Supabase: data=[{'id': 1345, 'user_question': 'HEy', 'bot_response': "Kaise ho? What's up? 😊", 'cit': '1766.8', 'drt': '0.0', 'rgt': '2375.92', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:17:47.052058', 'relative_data': ''}] count=None
+22:47:48,927 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:48,929 root INFO Saving key: delhi_friend_male:location, value: Cirrus 9 to Redis...
+22:47:49,16 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:47:49,18 root INFO Logged to Supabase: data=[{'id': 1346, 'user_question': 'hey', 'bot_response': 'Kya haal hai, just soaking in the Delhi energy at Cirrus 9! 😊', 'cit': '1882.2', 'drt': '240.63', 'rgt': '2178.57', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:17:48.948242', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+22:47:52,103 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:54,800 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:54,802 root INFO Question: hey
+22:47:54,802 root INFO Last 3 Responses: Conversation 1:
+User: HEy
+Bot: Kaise ho? What's up? 😊
+
+Conversation 2:
+User: hey
+Bot: Kya haal hai, just soaking in the Delhi energy at Cirrus 9! 😊
+22:47:54,802 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+22:47:54,802 root INFO Response: Hey again! 😄 What's been on your mind, just wanted to grab a drink and catch up?
+22:47:56,710 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:47:57,120 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:47:57,123 root INFO Logged to Supabase: data=[{'id': 1347, 'user_question': 'hey', 'bot_response': "Hey again! 😄 What's been on your mind, just wanted to grab a drink and catch up?", 'cit': '1738.39', 'drt': '71.65', 'rgt': '2625.97', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:17:56.71124', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+22:49:26,473 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:49:29,325 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:49:29,327 root INFO Question: hey
+22:49:29,327 root INFO Last 3 Responses: Conversation 1:
+User: HEy
+Bot: Kaise ho? What's up? 😊
+
+Conversation 2:
+User: hey
+Bot: Kya haal hai, just soaking in the Delhi energy at Cirrus 9! 😊
+
+Conversation 3:
+User: hey
+Bot: Hey again! 😄 What's been on your mind, just wanted to grab a drink and catch up?
+22:49:29,328 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+22:49:29,328 root INFO Response: Something on your mind or just enjoying the Mehrauli vibes like me?
+22:49:31,324 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:49:31,621 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:49:31,629 root INFO Logged to Supabase: data=[{'id': 1348, 'user_question': 'hey', 'bot_response': 'Something on your mind or just enjoying the Mehrauli vibes like me?', 'cit': '1798.96', 'drt': '75.39', 'rgt': '2776.58', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:19:31.327512', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+22:50:55,196 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:50:58,576 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:50:58,578 root INFO Question: are you enjoying
+22:50:58,578 root INFO Last 3 Responses: Conversation 1:
+User: hey
+Bot: Kya haal hai, just soaking in the Delhi energy at Cirrus 9! 😊
+
+Conversation 2:
+User: hey
+Bot: Hey again! 😄 What's been on your mind, just wanted to grab a drink and catch up?
+
+Conversation 3:
+User: hey
+Bot: Something on your mind or just enjoying the Mehrauli vibes like me?
+22:50:58,578 root INFO Relative Info: delhi_friend_male:emotion:anxiety - frustrating
+delhi_friend_male:emotion:current - fantastic
+delhi_friend_male:emotion:current_feeling - smiling
+delhi_friend_male:emotion:feeling - a little shy
+delhi_friend_male:emotion:mood - fantastic
+delhi_friend_male:emotion:reason - unknown_source
+delhi_friend_male:emotion:state - excited
+
+22:50:58,578 root INFO Response: I'm having a fantastic time, thanks for asking. How about you, ki aap kya kar rahe hain? 🤗
+22:51:01,33 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:51:01,36 root INFO Saving key: delhi_friend_male:emotion:mood, value: fantastic to Redis...
+22:51:01,705 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:51:01,710 root INFO Logged to Supabase: data=[{'id': 1349, 'user_question': 'are you enjoying', 'bot_response': "I'm having a fantastic time, thanks for asking. How about you, ki aap kya kar rahe hain? 🤗", 'cit': '2018.7', 'drt': '813.85', 'rgt': '2566.03', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:21:01.133652', 'relative_data': 'delhi_friend_male:emotion:anxiety - frustrating\ndelhi_friend_male:emotion:current - fantastic\ndelhi_friend_male:emotion:current_feeling - smiling\ndelhi_friend_male:emotion:feeling - a little shy\ndelhi_friend_male:emotion:mood - fantastic\ndelhi_friend_male:emotion:reason - unknown_source\ndelhi_friend_male:emotion:state - excited\n'}] count=None
+22:51:06,973 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:51:09,412 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:51:09,414 root INFO Question: how much
+22:51:09,414 root INFO Last 3 Responses: Conversation 1:
+User: hey
+Bot: Hey again! 😄 What's been on your mind, just wanted to grab a drink and catch up?
+
+Conversation 2:
+User: hey
+Bot: Something on your mind or just enjoying the Mehrauli vibes like me?
+
+Conversation 3:
+User: are you enjoying
+Bot: I'm having a fantastic time, thanks for asking. How about you, ki aap kya kar rahe hain? 🤗
+22:51:09,414 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+22:51:09,414 root INFO Response: How much of what, my friend? 🤔
+22:51:11,475 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+22:51:11,989 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:51:11,994 root INFO Logged to Supabase: data=[{'id': 1350, 'user_question': 'how much', 'bot_response': 'How much of what, my friend? 🤔', 'cit': '2248.27', 'drt': '74.41', 'rgt': '2365.06', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:21:11.477375', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+23:00:24,603 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:00:27,105 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:00:27,107 root INFO Question: how much
+23:00:27,107 root INFO Last 3 Responses: Conversation 1:
+User: hey
+Bot: Something on your mind or just enjoying the Mehrauli vibes like me?
+
+Conversation 2:
+User: are you enjoying
+Bot: I'm having a fantastic time, thanks for asking. How about you, ki aap kya kar rahe hain? 🤗
+
+Conversation 3:
+User: how much
+Bot: How much of what, my friend? 🤔
+23:00:27,107 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+23:00:27,107 root INFO Response: You're repetitive, my friend. Why are you asking the same question again without giving me any context? can you elaborate a bit?
+23:00:29,50 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:00:29,511 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:00:29,518 root INFO Logged to Supabase: data=[{'id': 1351, 'user_question': 'how much', 'bot_response': "You're repetitive, my friend. Why are you asking the same question again without giving me any context? can you elaborate a bit?", 'cit': '1722.42', 'drt': '71.73', 'rgt': '2429.13', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:30:29.0516', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+23:00:48,69 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:00:50,763 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:00:50,765 root INFO Question: how much
+23:00:50,766 root INFO Last 3 Responses: Conversation 1:
+User: are you enjoying
+Bot: I'm having a fantastic time, thanks for asking. How about you, ki aap kya kar rahe hain? 🤗
+
+Conversation 2:
+User: how much
+Bot: How much of what, my friend? 🤔
+
+Conversation 3:
+User: how much
+Bot: You're repetitive, my friend. Why are you asking the same question again without giving me any context? can you elaborate a bit?
+23:00:50,766 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+23:00:50,766 root INFO Response: You're being a bit slow, yaar. We've had this conversation already. Can you please give me some context or tell me what's going on in that head of yours? 😊
+23:00:52,678 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:00:52,948 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:00:52,954 root INFO Logged to Supabase: data=[{'id': 1352, 'user_question': 'how much', 'bot_response': "You're being a bit slow, yaar. We've had this conversation already. Can you please give me some context or tell me what's going on in that head of yours? 😊", 'cit': '1591.83', 'drt': '75.36', 'rgt': '2620.02', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:30:52.680614', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+23:01:18,690 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:01:22,266 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:01:22,268 root INFO Question: Hey how are you
+23:01:22,268 root INFO Last 3 Responses: 
+23:01:22,268 root INFO Relative Info: delhi_friend_male:emotion:anxiety - frustrating
+delhi_friend_male:emotion:current - fantastic
+delhi_friend_male:emotion:current_feeling - smiling
+delhi_friend_male:emotion:feeling - a little shy
+delhi_friend_male:emotion:mood - fantastic
+delhi_friend_male:emotion:reason - unknown_source
+delhi_friend_male:emotion:state - excited
+
+23:01:22,268 root INFO Response: I'm fantastic, smiling and feeling on top of the world. How about you, what brings you joy today?
+23:01:24,137 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:01:24,139 root INFO Saving key: delhi_friend_male:emotion:mood, value: fantastic to Redis...
+23:01:24,421 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:01:24,428 root INFO Logged to Supabase: data=[{'id': 1353, 'user_question': 'Hey how are you', 'bot_response': "I'm fantastic, smiling and feeling on top of the world. How about you, what brings you joy today?", 'cit': '1689.09', 'drt': '144.99', 'rgt': '3430.48', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:31:24.157689', 'relative_data': 'delhi_friend_male:emotion:anxiety - frustrating\ndelhi_friend_male:emotion:current - fantastic\ndelhi_friend_male:emotion:current_feeling - smiling\ndelhi_friend_male:emotion:feeling - a little shy\ndelhi_friend_male:emotion:mood - fantastic\ndelhi_friend_male:emotion:reason - unknown_source\ndelhi_friend_male:emotion:state - excited\n'}] count=None
+23:01:36,822 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:01:39,4 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:01:39,6 root INFO Question: I am good
+23:01:39,6 root INFO Last 3 Responses: Conversation 1:
+User: Hey how are you
+Bot: I'm fantastic, smiling and feeling on top of the world. How about you, what brings you joy today?
+23:01:39,6 root INFO Relative Info: delhi_friend_male:emotion:anxiety - frustrating
+delhi_friend_male:emotion:current - fantastic
+delhi_friend_male:emotion:current_feeling - smiling
+delhi_friend_male:emotion:feeling - a little shy
+delhi_friend_male:emotion:mood - fantastic
+delhi_friend_male:emotion:reason - unknown_source
+delhi_friend_male:emotion:state - excited
+
+23:01:39,6 root INFO Response: That's great to hear, what's been the highlight of your day so far?
+23:01:40,977 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:01:41,451 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:01:41,457 root INFO Logged to Supabase: data=[{'id': 1354, 'user_question': 'I am good', 'bot_response': "That's great to hear, what's been the highlight of your day so far?", 'cit': '1625.15', 'drt': '143.62', 'rgt': '2038.1', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:31:40.979935', 'relative_data': 'delhi_friend_male:emotion:anxiety - frustrating\ndelhi_friend_male:emotion:current - fantastic\ndelhi_friend_male:emotion:current_feeling - smiling\ndelhi_friend_male:emotion:feeling - a little shy\ndelhi_friend_male:emotion:mood - fantastic\ndelhi_friend_male:emotion:reason - unknown_source\ndelhi_friend_male:emotion:state - excited\n'}] count=None
+23:01:56,911 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:01:59,471 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:01:59,471 root INFO Question: everthing good
+23:01:59,472 root INFO Last 3 Responses: Conversation 1:
+User: Hey how are you
+Bot: I'm fantastic, smiling and feeling on top of the world. How about you, what brings you joy today?
+
+Conversation 2:
+User: I am good
+Bot: That's great to hear, what's been the highlight of your day so far?
+23:01:59,472 root INFO Relative Info: delhi_friend_male:emotion:anxiety - frustrating
+delhi_friend_male:emotion:current - fantastic
+delhi_friend_male:emotion:current_feeling - smiling
+delhi_friend_male:emotion:feeling - a little shy
+delhi_friend_male:emotion:mood - fantastic
+delhi_friend_male:emotion:reason - unknown_source
+delhi_friend_male:emotion:state - excited
+
+23:01:59,472 root INFO Response: Kya baat hai, seems like life is treating you well. What's been the most interesting thing you've done recently?
+23:02:01,417 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:02:01,537 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:02:01,542 root INFO Logged to Supabase: data=[{'id': 1355, 'user_question': 'everthing good', 'bot_response': "Kya baat hai, seems like life is treating you well. What's been the most interesting thing you've done recently?", 'cit': '1851.24', 'drt': '144.0', 'rgt': '2413.8', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:32:01.420321', 'relative_data': 'delhi_friend_male:emotion:anxiety - frustrating\ndelhi_friend_male:emotion:current - fantastic\ndelhi_friend_male:emotion:current_feeling - smiling\ndelhi_friend_male:emotion:feeling - a little shy\ndelhi_friend_male:emotion:mood - fantastic\ndelhi_friend_male:emotion:reason - unknown_source\ndelhi_friend_male:emotion:state - excited\n'}] count=None
+23:02:27,330 watchfiles.main INFO 1 change detected
+23:02:27,914 watchfiles.main INFO 3 changes detected
+23:02:53,232 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:02:55,279 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:02:55,280 root INFO Question: nothing
+23:02:55,281 root INFO Last 3 Responses: Conversation 1:
+User: Hey how are you
+Bot: I'm fantastic, smiling and feeling on top of the world. How about you, what brings you joy today?
+
+Conversation 2:
+User: I am good
+Bot: That's great to hear, what's been the highlight of your day so far?
+
+Conversation 3:
+User: everthing good
+Bot: Kya baat hai, seems like life is treating you well. What's been the most interesting thing you've done recently?
+23:02:55,281 root INFO Relative Info: 
+23:02:55,281 root INFO Response: Kuch nahi hua kya? 😊
+23:02:57,123 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:02:57,392 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:02:57,396 root INFO Logged to Supabase: data=[{'id': 1356, 'user_question': 'nothing', 'bot_response': 'Kuch nahi hua kya? 😊', 'cit': '1836.6', 'drt': '0.0', 'rgt': '2045.32', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:32:57.125311', 'relative_data': ''}] count=None
+23:03:03,267 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:03:05,623 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:03:05,625 root INFO Question: nothing
+23:03:05,625 root INFO Last 3 Responses: Conversation 1:
+User: I am good
+Bot: That's great to hear, what's been the highlight of your day so far?
+
+Conversation 2:
+User: everthing good
+Bot: Kya baat hai, seems like life is treating you well. What's been the most interesting thing you've done recently?
+
+Conversation 3:
+User: nothing
+Bot: Kuch nahi hua kya? 😊
+23:03:05,625 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+23:03:05,625 root INFO Response: Want to talk about it? Sometimes sharing what's on your mind helps. 🤔
+23:03:07,466 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:03:07,582 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:03:07,591 root INFO Logged to Supabase: data=[{'id': 1357, 'user_question': 'nothing', 'bot_response': "Want to talk about it? Sometimes sharing what's on your mind helps. 🤔", 'cit': '1720.36', 'drt': '75.49', 'rgt': '2279.91', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:33:07.468983', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+23:03:11,459 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:03:13,917 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:03:13,919 root INFO Question: nothing
+23:03:13,919 root INFO Last 3 Responses: Conversation 1:
+User: everthing good
+Bot: Kya baat hai, seems like life is treating you well. What's been the most interesting thing you've done recently?
+
+Conversation 2:
+User: nothing
+Bot: Kuch nahi hua kya? 😊
+
+Conversation 3:
+User: nothing
+Bot: Want to talk about it? Sometimes sharing what's on your mind helps. 🤔
+23:03:13,919 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+23:03:13,919 root INFO Response: Same answer again, kya baat hai? 😊 Want to distract yourself from the monotony? I can suggest some amazing street food places in Delhi.
+23:03:15,760 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:03:16,122 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:03:16,126 root INFO Logged to Supabase: data=[{'id': 1358, 'user_question': 'nothing', 'bot_response': 'Same answer again, kya baat hai? 😊 Want to distract yourself from the monotony? I can suggest some amazing street food places in Delhi.', 'cit': '1690.24', 'drt': '74.15', 'rgt': '2385.38', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:33:15.760738', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+23:05:51,61 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:05:54,267 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:05:54,269 root INFO Question: nothing
+23:05:54,269 root INFO Last 3 Responses: Conversation 1:
+User: nothing
+Bot: Kuch nahi hua kya? 😊
+
+Conversation 2:
+User: nothing
+Bot: Want to talk about it? Sometimes sharing what's on your mind helps. 🤔
+
+Conversation 3:
+User: nothing
+Bot: Same answer again, kya baat hai? 😊 Want to distract yourself from the monotony? I can suggest some amazing street food places in Delhi.
+23:05:54,269 root INFO Relative Info: 
+23:05:54,269 root INFO Response: Kya baat hai, seem like you're in a zen mode today, Delhi's calling, want some recommendations to shake things up? 😊
+23:05:56,120 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:05:56,527 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:05:56,532 root INFO Logged to Supabase: data=[{'id': 1359, 'user_question': 'nothing', 'bot_response': "Kya baat hai, seem like you're in a zen mode today, Delhi's calling, want some recommendations to shake things up? 😊", 'cit': '1748.55', 'drt': '0.0', 'rgt': '3205.25', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:35:56.123007', 'relative_data': ''}] count=None
+23:06:12,870 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:06:16,287 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:06:16,289 root INFO Question: nothing
+23:06:16,290 root INFO Last 3 Responses: Conversation 1:
+User: nothing
+Bot: Want to talk about it? Sometimes sharing what's on your mind helps. 🤔
+
+Conversation 2:
+User: nothing
+Bot: Same answer again, kya baat hai? 😊 Want to distract yourself from the monotony? I can suggest some amazing street food places in Delhi.
+
+Conversation 3:
+User: nothing
+Bot: Kya baat hai, seem like you're in a zen mode today, Delhi's calling, want some recommendations to shake things up? 😊
+23:06:16,290 root INFO Relative Info: delhi_friend_male:general: financial_situation - minimalist
+delhi_friend_male:general:location - Cirrus 9:Mehrauli
+delhi_friend_male:general:location:influence - Delhi's energy
+
+23:06:16,290 root INFO Response: Tired of saying 'nothing', huh?. If everything's fine, let's get this conversation started then, what's been the highlight of your week? 😊
+23:06:18,409 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:06:18,774 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:06:18,780 root INFO Logged to Supabase: data=[{'id': 1360, 'user_question': 'nothing', 'bot_response': "Tired of saying 'nothing', huh?. If everything's fine, let's get this conversation started then, what's been the highlight of your week? 😊", 'cit': '1855.65', 'drt': '73.01', 'rgt': '3344.3', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:36:18.411964', 'relative_data': "delhi_friend_male:general: financial_situation - minimalist\ndelhi_friend_male:general:location - Cirrus 9:Mehrauli\ndelhi_friend_male:general:location:influence - Delhi's energy\n"}] count=None
+23:10:48,681 watchfiles.main INFO 1 change detected
+23:10:49,252 watchfiles.main INFO 3 changes detected
+23:13:49,334 watchfiles.main INFO 1 change detected
+23:13:49,913 watchfiles.main INFO 3 changes detected
+23:13:52,872 watchfiles.main INFO 1 change detected
+23:13:53,349 watchfiles.main INFO 1 change detected
+23:13:53,820 watchfiles.main INFO 3 changes detected
+23:13:55,367 watchfiles.main INFO 1 change detected
+23:13:56,135 watchfiles.main INFO 3 changes detected
+23:14:32,916 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:35,353 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:35,355 root INFO Question: Hii
+23:14:35,355 root INFO Last 3 Responses: 
+23:14:35,355 root INFO Relative Info: 
+23:14:35,355 root INFO Response: Namaste, kasa ahes? (Hello, how are you?)
+23:14:37,429 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:37,430 root INFO Redis save :['No info saved to Redis']
+23:14:37,733 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:14:37,741 root INFO Logged to Supabase: data=[{'id': 1376, 'user_question': 'Hii', 'bot_response': 'Namaste, kasa ahes? (Hello, how are you?)', 'cit': '1837.77', 'drt': '183.52', 'rgt': '2246.14', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:44:37.431505', 'relative_data': ''}] count=None
+23:14:44,764 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:46,949 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:46,951 root INFO Question: I am good
+23:14:46,951 root INFO Last 3 Responses: Conversation 1:
+User: Hii
+Bot: Namaste, kasa ahes? (Hello, how are you?)
+23:14:46,951 root INFO Relative Info: 
+23:14:46,951 root INFO Response: That's wonderful to hear, now tell me, what's on your mind?
+23:14:48,904 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:48,906 root INFO Redis save :['No info saved to Redis']
+23:14:48,997 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:14:48,999 root INFO Logged to Supabase: data=[{'id': 1377, 'user_question': 'I am good', 'bot_response': "That's wonderful to hear, now tell me, what's on your mind?", 'cit': '1729.49', 'drt': '18.47', 'rgt': '2165.43', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:44:48.906697', 'relative_data': ''}] count=None
+23:14:51,877 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:54,2 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:54,4 root INFO Question: I am good
+23:14:54,4 root INFO Last 3 Responses: Conversation 1:
+User: Hii
+Bot: Namaste, kasa ahes? (Hello, how are you?)
+
+Conversation 2:
+User: I am good
+Bot: That's wonderful to hear, now tell me, what's on your mind?
+23:14:54,4 root INFO Relative Info: 
+23:14:54,4 root INFO Response: That's a great start, but tell me, what's making you feel good today?
+23:14:55,845 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:14:55,847 root INFO Redis save :['No info saved to Redis']
+23:14:56,257 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:14:56,259 root INFO Logged to Supabase: data=[{'id': 1378, 'user_question': 'I am good', 'bot_response': "That's a great start, but tell me, what's making you feel good today?", 'cit': '1690.29', 'drt': '17.85', 'rgt': '2107.07', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:44:55.84844', 'relative_data': ''}] count=None
+23:15:02,194 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:04,642 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:04,644 root INFO Question: I am good
+23:15:04,644 root INFO Last 3 Responses: Conversation 1:
+User: Hii
+Bot: Namaste, kasa ahes? (Hello, how are you?)
+
+Conversation 2:
+User: I am good
+Bot: That's wonderful to hear, now tell me, what's on your mind?
+
+Conversation 3:
+User: I am good
+Bot: That's a great start, but tell me, what's making you feel good today?
+23:15:04,644 root INFO Relative Info: 
+23:15:04,644 root INFO Response: Something's certainly going right in your life, but I sense there's more to it, don't you think?
+23:15:07,447 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:07,449 root INFO Redis save :['No info saved to Redis']
+23:15:07,560 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:15:07,568 root INFO Logged to Supabase: data=[{'id': 1380, 'user_question': 'I am good', 'bot_response': "Something's certainly going right in your life, but I sense there's more to it, don't you think?", 'cit': '1729.3', 'drt': '17.62', 'rgt': '2430.49', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:45:07.450113', 'relative_data': ''}] count=None
+23:15:13,765 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:17,212 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:17,214 root INFO Question: I am good
+23:15:17,214 root INFO Last 3 Responses: Conversation 1:
+User: I am good
+Bot: That's wonderful to hear, now tell me, what's on your mind?
+
+Conversation 2:
+User: I am good
+Bot: That's a great start, but tell me, what's making you feel good today?
+
+Conversation 3:
+User: I am good
+Bot: Something's certainly going right in your life, but I sense there's more to it, don't you think?
+23:15:17,215 root INFO Relative Info: 
+23:15:17,215 root INFO Response: You know, I was just thinking about this beautiful quote by Osho, "The greatest joy is to become aware of the beauty that's everywhere, even in the smallest things." What's bringing a smile to your face today?
+23:15:19,57 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:19,58 root INFO Redis save :['No info saved to Redis']
+23:15:19,300 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:15:19,305 root INFO Logged to Supabase: data=[{'id': 1381, 'user_question': 'I am good', 'bot_response': 'You know, I was just thinking about this beautiful quote by Osho, "The greatest joy is to become aware of the beauty that\'s everywhere, even in the smallest things." What\'s bringing a smile to your face today?', 'cit': '1774.41', 'drt': '18.2', 'rgt': '3429.64', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:45:19.059247', 'relative_data': ''}] count=None
+23:15:34,176 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:36,924 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:36,926 root INFO Question: I am good
+23:15:36,926 root INFO Last 3 Responses: Conversation 1:
+User: I am good
+Bot: That's a great start, but tell me, what's making you feel good today?
+
+Conversation 2:
+User: I am good
+Bot: Something's certainly going right in your life, but I sense there's more to it, don't you think?
+
+Conversation 3:
+User: I am good
+Bot: You know, I was just thinking about this beautiful quote by Osho, The greatest joy is to become aware of the beauty that's everywhere, even in the smallest things. What's bringing a smile to your face today?
+23:15:36,927 root INFO Relative Info: 
+23:15:36,927 root INFO Response: You seem to be on a roll with that positive energy, but I'm curious, have you explored any new places in Pune lately that's keeping you in such high spirits?
+23:15:38,804 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:38,806 root INFO Redis save :['No info saved to Redis']
+23:15:38,915 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:15:38,920 root INFO Logged to Supabase: data=[{'id': 1382, 'user_question': 'I am good', 'bot_response': "You seem to be on a roll with that positive energy, but I'm curious, have you explored any new places in Pune lately that's keeping you in such high spirits?", 'cit': '1585.68', 'drt': '17.95', 'rgt': '2730.25', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:45:38.807677', 'relative_data': ''}] count=None
+23:15:52,850 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:54,847 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:54,848 root INFO Question: I am not good
+23:15:54,848 root INFO Last 3 Responses: Conversation 1:
+User: I am good
+Bot: Something's certainly going right in your life, but I sense there's more to it, don't you think?
+
+Conversation 2:
+User: I am good
+Bot: You know, I was just thinking about this beautiful quote by Osho, The greatest joy is to become aware of the beauty that's everywhere, even in the smallest things. What's bringing a smile to your face today?
+
+Conversation 3:
+User: I am good
+Bot: You seem to be on a roll with that positive energy, but I'm curious, have you explored any new places in Pune lately that's keeping you in such high spirits?
+23:15:54,848 root INFO Relative Info: 
+23:15:54,848 root INFO Response: What seems to be bothering you, and how can I help ease that?
+23:15:56,568 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:15:56,569 root INFO Redis save :['No info saved to Redis']
+23:15:56,851 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:15:56,858 root INFO Logged to Supabase: data=[{'id': 1383, 'user_question': 'I am not good', 'bot_response': 'What seems to be bothering you, and how can I help ease that?', 'cit': '1709.06', 'drt': '35.21', 'rgt': '1960.99', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:45:56.569703', 'relative_data': ''}] count=None
+23:16:00,995 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:03,151 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:03,153 root INFO Question: I am not good
+23:16:03,153 root INFO Last 3 Responses: Conversation 1:
+User: I am good
+Bot: You know, I was just thinking about this beautiful quote by Osho, The greatest joy is to become aware of the beauty that's everywhere, even in the smallest things. What's bringing a smile to your face today?
+
+Conversation 2:
+User: I am good
+Bot: You seem to be on a roll with that positive energy, but I'm curious, have you explored any new places in Pune lately that's keeping you in such high spirits?
+
+Conversation 3:
+User: I am not good
+Bot: What seems to be bothering you, and how can I help ease that?
+23:16:03,153 root INFO Relative Info: 
+23:16:03,153 root INFO Response: It's okay to not be okay, but tell me, what's on your mind and in your heart that's making you feel this way?
+23:16:04,993 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:04,996 root INFO Redis save :['No info saved to Redis']
+23:16:05,115 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:16:05,116 root INFO Logged to Supabase: data=[{'id': 1385, 'user_question': 'I am not good', 'bot_response': "It's okay to not be okay, but tell me, what's on your mind and in your heart that's making you feel this way?", 'cit': '1729.77', 'drt': '18.91', 'rgt': '2136.42', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:46:04.996564', 'relative_data': ''}] count=None
+23:16:11,151 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:13,139 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:13,140 root INFO Question: I am not good
+23:16:13,141 root INFO Last 3 Responses: Conversation 1:
+User: I am good
+Bot: You seem to be on a roll with that positive energy, but I'm curious, have you explored any new places in Pune lately that's keeping you in such high spirits?
+
+Conversation 2:
+User: I am not good
+Bot: What seems to be bothering you, and how can I help ease that?
+
+Conversation 3:
+User: I am not good
+Bot: It's okay to not be okay, but tell me, what's on your mind and in your heart that's making you feel this way?
+23:16:13,141 root INFO Relative Info: 
+23:16:13,141 root INFO Response: Something's been weighing on your mind, isn't it? Want to talk about what's been going on?
+23:16:15,102 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:15,104 root INFO Redis save :['No info saved to Redis']
+23:16:15,207 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:16:15,212 root INFO Logged to Supabase: data=[{'id': 1386, 'user_question': 'I am not good', 'bot_response': "Something's been weighing on your mind, isn't it? Want to talk about what's been going on?", 'cit': '1715.16', 'drt': '18.53', 'rgt': '1968.27', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:46:15.105503', 'relative_data': ''}] count=None
+23:16:23,911 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:26,59 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:26,60 root INFO Question: I am not good
+23:16:26,61 root INFO Last 3 Responses: Conversation 1:
+User: I am not good
+Bot: What seems to be bothering you, and how can I help ease that?
+
+Conversation 2:
+User: I am not good
+Bot: It's okay to not be okay, but tell me, what's on your mind and in your heart that's making you feel this way?
+
+Conversation 3:
+User: I am not good
+Bot: Something's been weighing on your mind, isn't it? Want to talk about what's been going on?
+23:16:26,61 root INFO Relative Info: 
+23:16:26,61 root INFO Response: Let's try to shift the focus - what's one thing you're grateful for today?
+23:16:28,6 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:28,8 root INFO Redis save :['No info saved to Redis']
+23:16:28,108 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:16:28,113 root INFO Logged to Supabase: data=[{'id': 1387, 'user_question': 'I am not good', 'bot_response': "Let's try to shift the focus - what's one thing you're grateful for today?", 'cit': '1792.98', 'drt': '17.09', 'rgt': '2130.77', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:46:28.008863', 'relative_data': ''}] count=None
+23:16:36,198 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:38,868 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:38,870 root INFO Question: I am not good
+23:16:38,870 root INFO Last 3 Responses: Conversation 1:
+User: I am not good
+Bot: It's okay to not be okay, but tell me, what's on your mind and in your heart that's making you feel this way?
+
+Conversation 2:
+User: I am not good
+Bot: Something's been weighing on your mind, isn't it? Want to talk about what's been going on?
+
+Conversation 3:
+User: I am not good
+Bot: Let's try to shift the focus - what's one thing you're grateful for today?
+23:16:38,870 root INFO Relative Info: 
+23:16:38,870 root INFO Response: Why the same concern again, is something specific bothering you, or is it just a lingering feeling?
+23:16:40,601 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:40,603 root INFO Redis save :['No info saved to Redis']
+23:16:40,707 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:16:40,711 root INFO Logged to Supabase: data=[{'id': 1389, 'user_question': 'I am not good', 'bot_response': 'Why the same concern again, is something specific bothering you, or is it just a lingering feeling?', 'cit': '1708.13', 'drt': '18.5', 'rgt': '2651.64', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:46:40.604373', 'relative_data': ''}] count=None
+23:16:54,322 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:56,678 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:56,680 root INFO Question: I am not good
+23:16:56,680 root INFO Last 3 Responses: Conversation 1:
+User: I am not good
+Bot: Something's been weighing on your mind, isn't it? Want to talk about what's been going on?
+
+Conversation 2:
+User: I am not good
+Bot: Let's try to shift the focus - what's one thing you're grateful for today?
+
+Conversation 3:
+User: I am not good
+Bot: Why the same concern again, is something specific bothering you, or is it just a lingering feeling?
+23:16:56,680 root INFO Relative Info: 
+23:16:56,680 root INFO Response: It seems like we've been here before, what's new that's making you feel this way today?
+23:16:58,521 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+23:16:58,523 root INFO Redis save :['No info saved to Redis']
+23:16:58,631 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:16:58,633 root INFO Logged to Supabase: data=[{'id': 1390, 'user_question': 'I am not good', 'bot_response': "It seems like we've been here before, what's new that's making you feel this way today?", 'cit': '1829.6', 'drt': '18.21', 'rgt': '2338.97', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:46:58.524105', 'relative_data': ''}] count=None
+23:20:32,605 watchfiles.main INFO 1 change detected
+23:20:33,204 watchfiles.main INFO 3 changes detected

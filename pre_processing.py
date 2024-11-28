@@ -1,10 +1,41 @@
-from functions.groq_fun import call_groq_api
+from utils import call_groq_api
 import time 
 
 # Relative information search
 def get_relative_info(question,r,personality):
+    """
+    Searches for relevant information stored in Redis based on the user's question and predefined categories.
+
+    Args:
+        question (str): The user's question.
+        r (Redis): Redis client instance for retrieving data.
+        personality (str): The chatbot's personality or profile prefix for categorizing stored data.
+
+    Returns:
+        tuple:
+            - response (str): Retrieved relevant information, formatted as key-value pairs.
+            - cit (float): Category Identification Time in milliseconds.
+            - drt (float): Data Retrieval Time in milliseconds.
+
+    Example:
+        Input:
+            question = "What are your hobbies?"
+            r = <Redis_client>
+            personality = "delhi"
+
+        Redis Data (Assuming Redis contains the following stored info):
+            delhi:interests:reading - Loves novels and historical books
+            delhi:interests:cooking - Enjoys experimenting with Mughlai recipes
+
+        Output:
+            response = "delhi:interests:reading - Loves novels and historical books\ndelhi:interests:cooking - Enjoys experimenting with Mughlai recipes\n"
+            cit = 120.45  # (Example time in milliseconds)
+            drt = 85.34   # (Example time in milliseconds)
+    """
+    # Start the timer
     start_time = time.time()
     
+    # Create the prompt for the Relative Info Search 
     relative_info_prompt ="""
         ## Instruction
         - You are the highly skilled question categorizer who can categorize questions into categories based on the required information.
@@ -38,6 +69,8 @@ def get_relative_info(question,r,personality):
 
         --- 
     """.replace("{question}", question)
+
+    # Call to LLM to get the response 
     res = call_groq_api(relative_info_prompt)
 
 
@@ -45,12 +78,10 @@ def get_relative_info(question,r,personality):
     cit = round((time.time() - start_time) * 1000, 2)  # in milliseconds
     start_drt = time.time()
     response = ""
+
+    # If response is NO then there No matching category tin that information is stored else we get the category
     if res != "NO":
         res = personality + ":" + res + ":*"
-        print(f"relative info prompt: {res}")
-
-        # Start Data Retrieval Time measurement
-      
 
         cursor = 0
         result = {}
@@ -59,13 +90,13 @@ def get_relative_info(question,r,personality):
         while True:
             cursor, batch = r.scan(cursor=cursor, match=res)
             
+            # get values in variable
             for key in batch:
                 key_str = key.decode('utf-8')  # Decode byte key to string
                 result[key_str] = r.get(key).decode('utf-8')  # Get string value
             
             if cursor == 0:
                 break
-                # get values in variable
 
         # Print results
         for key, value in result.items():
@@ -75,6 +106,8 @@ def get_relative_info(question,r,personality):
     drt = round((time.time() - start_drt) * 1000, 2)  # in milliseconds
     
     return response, cit, drt
+
+
 
 _all_ = [
     "get_relative_info"
