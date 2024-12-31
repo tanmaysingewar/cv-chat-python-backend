@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 from openai import OpenAI
 
-def call_groq_api(prompt,model="meta-llama/llama-3.1-70b-instruct"):
+def call_groq_api(prompt,model="gpt-4o"):
     """
     Calls the Novita AI API to interact with a specified language model, sending a prompt 
     and retrieving the model's response.
@@ -30,14 +30,18 @@ def call_groq_api(prompt,model="meta-llama/llama-3.1-70b-instruct"):
         Output:
             "The capital of India is New Delhi."
     """
+
     client = OpenAI(
-        base_url="https://api.novita.ai/v3/openai",
+        # base_url="https://api.novita.ai/v3/openai",
         # Get the Novita AI API Key by referring to: https://novita.ai/docs/get-started/quickstart.html#_2-manage-api-key.
-        api_key= os.getenv("NOVITA_API_KEY"),
+        api_key= os.getenv("OPENAI_API_KEY"),
     )
 
+    print(os.getenv("OPENAI_API_KEY"))
+
     # Selecting the default model
-    model = "meta-llama/llama-3.1-70b-instruct"
+    # model = "meta-llama/llama-3.1-70b-instruct"
+    model="gpt-4o"
 
     # Stream the response False
     stream = False 
@@ -51,7 +55,7 @@ def call_groq_api(prompt,model="meta-llama/llama-3.1-70b-instruct"):
                 "content": prompt
             }
         ],
-        stream=stream,
+        # stream=stream,
     )
 
     # Return the response

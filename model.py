@@ -3,7 +3,9 @@ import json
 import asyncio
 from utils import call_groq_api
 
-def get_response_by_bot(question, relative_info, cit, drt,model,personality_prompt,last_three_responses):
+
+#  request.question, relative_info, cit, drt, request.llm, request.personality_prompt, request.last_three_responses
+def get_response_by_bot(question,personality_prompt,last_three_responses):
     """
         Generates a chatbot response based on user input, contextual information, and personality.
 
@@ -45,11 +47,12 @@ def get_response_by_bot(question, relative_info, cit, drt,model,personality_prom
     bot_prompt ="""
     ## Instruction
         {personality_prompt}
-        Here is relative information about you: {relative_info}
         NOTE: If there’s any relevant info about you, I’ll weave it into the chat naturally, so it feels personalized. But if it’s not available or doesn’t quite match the conversation, I’ll focus on the here and now, keeping the energy high and the talk flowing. No need to bring it up unless it’s useful, we’re just vibing!
         Response should not be long, keep it small and to the point. If you need to elaborate, do that, but don’t overdo it.
         - Dont add translations, like this "Tere liye kya, Delhi?" (what's up for you, Delhi?) 
-    ## Last 3 Responses you have given
+    ## Last 8 Responses you have given
+        {last_three_responses}
+    ## Last 8 Responses you have given
         {last_three_responses}
     Instruction on last 3 responses:
         - If last three user questions are repetitive dont provider similar responses again, change your next little bit so it should not look repetitive.
@@ -58,7 +61,7 @@ def get_response_by_bot(question, relative_info, cit, drt,model,personality_prom
 
     ## User Question
     Answer the user question:{question}
-    """.replace("{relative_info}", relative_info).replace("{question}", question).replace("{personality_prompt}",personality_prompt).replace("{last_three_responses}",last_three_responses)
+    """ .replace("{question}", question).replace("{personality_prompt}",personality_prompt).replace("{last_three_responses}",last_three_responses)
 
     # Call the API to get the response
     bot_prompt_response = call_groq_api(bot_prompt)
@@ -69,8 +72,8 @@ def get_response_by_bot(question, relative_info, cit, drt,model,personality_prom
     # Prepare the final response
     response_json = {
         "response": bot_prompt_response,
-        "cit": cit,
-        "drt": drt,
+        "cit": 0,
+        "drt": 0,
         "rgt": rgt
     }
     return response_json

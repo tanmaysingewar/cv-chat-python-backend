@@ -118,13 +118,13 @@ async def cv_chat(request: QuestionRequest, background_tasks: BackgroundTasks):
             return {"error": str("Please provide a question")}  # Return error if invalid
 
         # Get relative information and timing data for the question
-        relative_info, cit, drt = get_relative_info(
-            request.question, redis_client, request.personality
-        )
+        # relative_info, cit, drt = get_relative_info(
+        #     request.question, redis_client, request.personality
+        # )
 
         # Generate bot response using the provided information and language model
         bot_response = get_response_by_bot(
-            request.question, relative_info, cit, drt, request.llm, request.personality_prompt, request.last_three_responses
+            request.question,request.personality_prompt, request.last_three_responses
         )
 
         # Ensure bot response is in the correct format (dictionary with a "response" key)
@@ -136,15 +136,15 @@ async def cv_chat(request: QuestionRequest, background_tasks: BackgroundTasks):
         # Log the input question, relative info, and bot response
         logging.info(f"Question: {request.question}")
         logging.info(f"Last 3 Responses: {request.last_three_responses}")
-        logging.info(f"Relative Info: {relative_info}")
+        # logging.info(f"Relative Info: {relative_info}")
         logging.info(f"Response: {response_data}")
 
         # Save bot response and logs asynchronously
+        # background_tasks.add_task(
+        #     save_to_redis, response_data, redis_client, relative_info, request.personality
+        # )
         background_tasks.add_task(
-            save_to_redis, response_data, redis_client, relative_info, request.personality
-        )
-        background_tasks.add_task(
-            log_to_supabase, supabase, request.question, response_data, cit, drt, bot_response["rgt"], request.personality, request.llm, relative_info
+            log_to_supabase, supabase, request.question, response_data, 0, 0, bot_response["rgt"], request.personality, request.llm, ""
         )
 
         # Return the bot response

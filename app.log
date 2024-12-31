@@ -548,3 +548,905 @@ Bot: Why the same concern again, is something specific bothering you, or is it j
 23:16:58,633 root INFO Logged to Supabase: data=[{'id': 1390, 'user_question': 'I am not good', 'bot_response': "It seems like we've been here before, what's new that's making you feel this way today?", 'cit': '1829.6', 'drt': '18.21', 'rgt': '2338.97', 'personality': 'pune_romantic_female', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-11-28T17:46:58.524105', 'relative_data': ''}] count=None
 23:20:32,605 watchfiles.main INFO 1 change detected
 23:20:33,204 watchfiles.main INFO 3 changes detected
+15:23:34,491 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/MM-Mark1/cv-chat/python-server']
+15:23:34,492 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+15:23:34,492 uvicorn.error INFO Started reloader process [70657] using WatchFiles
+15:23:35,239 watchfiles.main INFO 15 changes detected
+15:23:35,766 watchfiles.main INFO 28 changes detected
+15:23:36,242 watchfiles.main INFO 101 changes detected
+15:23:36,377 uvicorn.error INFO Started server process [70666]
+15:23:36,378 uvicorn.error INFO Waiting for application startup.
+15:23:36,379 uvicorn.error INFO Application startup complete.
+15:23:36,606 watchfiles.main INFO 1 change detected
+15:23:42,548 uvicorn.error INFO Shutting down
+15:23:42,651 uvicorn.error INFO Finished server process [70666]
+15:23:42,656 uvicorn.error INFO Stopping reloader process [70657]
+15:23:46,0 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/MM-Mark1/cv-chat/python-server']
+15:23:46,1 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+15:23:46,1 uvicorn.error INFO Started reloader process [70704] using WatchFiles
+15:23:46,531 uvicorn.error INFO Started server process [70707]
+15:23:46,532 uvicorn.error INFO Waiting for application startup.
+15:23:46,533 uvicorn.error INFO Application startup complete.
+15:24:14,166 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+15:24:16,484 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+15:24:16,485 root INFO Question: What do your father do?
+15:24:16,485 root INFO Last 3 Responses: 
+15:24:16,485 root INFO Relative Info: delhi:relationships:family - No father
+delhi:relationships:personal_life - No personal life
+
+15:24:16,485 root INFO Response: I don't have a father.
+15:24:16,615 watchfiles.main INFO 7 changes detected
+15:24:20,413 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+15:24:20,415 root INFO Saving key: delhi:relationships:father, value: None to Redis...
+15:24:20,448 root INFO Redis save :['relationships:father Value:None']
+15:24:21,543 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+15:24:21,549 root INFO Logged to Supabase: data=[{'id': 1907, 'user_question': 'What do your father do?', 'bot_response': "I don't have a father.", 'cit': '2845.56', 'drt': '429.47', 'rgt': '1840.7', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T09:54:20.449642', 'relative_data': 'delhi:relationships:family - No father\ndelhi:relationships:personal_life - No personal life\n'}] count=None
+15:24:55,878 watchfiles.main INFO 1 change detected
+15:24:55,879 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+15:24:55,934 uvicorn.error INFO Shutting down
+15:24:56,36 uvicorn.error INFO Waiting for application shutdown.
+15:24:56,37 uvicorn.error INFO Application shutdown complete.
+15:24:56,37 uvicorn.error INFO Finished server process [70707]
+15:24:56,409 watchfiles.main INFO 1 change detected
+15:24:56,748 uvicorn.error INFO Started server process [70893]
+15:24:56,749 uvicorn.error INFO Waiting for application startup.
+15:24:56,749 uvicorn.error INFO Application startup complete.
+15:24:56,829 watchfiles.main INFO 3 changes detected
+15:25:08,9 watchfiles.main INFO 1 change detected
+15:25:08,10 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+15:25:08,70 uvicorn.error INFO Shutting down
+15:25:08,172 uvicorn.error INFO Waiting for application shutdown.
+15:25:08,173 uvicorn.error INFO Application shutdown complete.
+15:25:08,174 uvicorn.error INFO Finished server process [70893]
+15:25:08,540 watchfiles.main INFO 1 change detected
+15:25:08,732 uvicorn.error INFO Started server process [70926]
+15:25:08,733 uvicorn.error INFO Waiting for application startup.
+15:25:08,733 uvicorn.error INFO Application startup complete.
+15:25:08,900 watchfiles.main INFO 3 changes detected
+15:25:11,369 watchfiles.main INFO 1 change detected
+15:25:12,442 watchfiles.main INFO 3 changes detected
+15:25:29,771 watchfiles.main INFO 1 change detected
+15:25:29,772 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+15:25:29,864 uvicorn.error INFO Shutting down
+15:25:29,967 uvicorn.error INFO Waiting for application shutdown.
+15:25:29,969 uvicorn.error INFO Application shutdown complete.
+15:25:29,970 uvicorn.error INFO Finished server process [70926]
+15:25:30,337 watchfiles.main INFO 1 change detected
+15:25:30,574 uvicorn.error INFO Started server process [70986]
+15:25:30,576 uvicorn.error INFO Waiting for application startup.
+15:25:30,576 uvicorn.error INFO Application startup complete.
+15:25:30,701 watchfiles.main INFO 3 changes detected
+15:25:37,459 watchfiles.main INFO 1 change detected
+15:25:37,459 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+15:25:37,554 uvicorn.error INFO Shutting down
+15:25:37,656 uvicorn.error INFO Waiting for application shutdown.
+15:25:37,657 uvicorn.error INFO Application shutdown complete.
+15:25:37,658 uvicorn.error INFO Finished server process [70986]
+15:25:38,25 watchfiles.main INFO 1 change detected
+15:25:38,245 uvicorn.error INFO Started server process [71011]
+15:25:38,247 uvicorn.error INFO Waiting for application startup.
+15:25:38,247 uvicorn.error INFO Application startup complete.
+15:25:38,388 watchfiles.main INFO 3 changes detected
+15:25:45,210 watchfiles.main INFO 1 change detected
+15:25:45,210 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:25:45,220 uvicorn.error INFO Shutting down
+15:25:45,322 uvicorn.error INFO Waiting for application shutdown.
+15:25:45,322 uvicorn.error INFO Application shutdown complete.
+15:25:45,323 uvicorn.error INFO Finished server process [71011]
+15:25:45,738 watchfiles.main INFO 4 changes detected
+15:25:45,865 uvicorn.error INFO Started server process [71029]
+15:25:45,867 uvicorn.error INFO Waiting for application startup.
+15:25:45,867 uvicorn.error INFO Application startup complete.
+15:25:49,649 watchfiles.main INFO 1 change detected
+15:25:49,649 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:25:49,708 uvicorn.error INFO Shutting down
+15:25:49,810 uvicorn.error INFO Waiting for application shutdown.
+15:25:49,811 uvicorn.error INFO Application shutdown complete.
+15:25:49,812 uvicorn.error INFO Finished server process [71029]
+15:25:50,234 watchfiles.main INFO 4 changes detected
+15:25:50,378 uvicorn.error INFO Started server process [71058]
+15:25:50,379 uvicorn.error INFO Waiting for application startup.
+15:25:50,380 uvicorn.error INFO Application startup complete.
+15:26:12,996 watchfiles.main INFO 1 change detected
+15:26:12,997 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:26:13,19 uvicorn.error INFO Shutting down
+15:26:13,120 uvicorn.error INFO Waiting for application shutdown.
+15:26:13,121 uvicorn.error INFO Application shutdown complete.
+15:26:13,122 uvicorn.error INFO Finished server process [71058]
+15:26:13,493 watchfiles.main INFO 1 change detected
+15:26:13,755 uvicorn.error INFO Started server process [71099]
+15:26:13,757 uvicorn.error INFO Waiting for application startup.
+15:26:13,757 uvicorn.error INFO Application startup complete.
+15:26:13,851 watchfiles.main INFO 3 changes detected
+15:26:21,482 watchfiles.main INFO 1 change detected
+15:26:21,483 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:26:21,540 uvicorn.error INFO Shutting down
+15:26:21,642 uvicorn.error INFO Waiting for application shutdown.
+15:26:21,643 uvicorn.error INFO Application shutdown complete.
+15:26:21,643 uvicorn.error INFO Finished server process [71099]
+15:26:22,66 watchfiles.main INFO 4 changes detected
+15:26:22,210 uvicorn.error INFO Started server process [71124]
+15:26:22,211 uvicorn.error INFO Waiting for application startup.
+15:26:22,211 uvicorn.error INFO Application startup complete.
+15:26:33,333 watchfiles.main INFO 1 change detected
+15:26:33,334 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:26:33,347 uvicorn.error INFO Shutting down
+15:26:33,450 uvicorn.error INFO Waiting for application shutdown.
+15:26:33,451 uvicorn.error INFO Application shutdown complete.
+15:26:33,452 uvicorn.error INFO Finished server process [71124]
+15:26:33,876 watchfiles.main INFO 4 changes detected
+15:26:34,61 uvicorn.error INFO Started server process [71147]
+15:26:34,62 uvicorn.error INFO Waiting for application startup.
+15:26:34,63 uvicorn.error INFO Application startup complete.
+15:27:51,264 watchfiles.main INFO 1 change detected
+15:27:51,265 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:27:51,305 uvicorn.error INFO Shutting down
+15:27:51,406 uvicorn.error INFO Waiting for application shutdown.
+15:27:51,407 uvicorn.error INFO Application shutdown complete.
+15:27:51,408 uvicorn.error INFO Finished server process [71147]
+15:27:51,832 watchfiles.main INFO 4 changes detected
+15:27:51,990 uvicorn.error INFO Started server process [71306]
+15:27:51,992 uvicorn.error INFO Waiting for application startup.
+15:27:51,992 uvicorn.error INFO Application startup complete.
+15:27:59,615 watchfiles.main INFO 1 change detected
+15:27:59,616 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+15:27:59,677 uvicorn.error INFO Shutting down
+15:27:59,779 uvicorn.error INFO Waiting for application shutdown.
+15:27:59,782 uvicorn.error INFO Application shutdown complete.
+15:27:59,783 uvicorn.error INFO Finished server process [71306]
+15:28:00,157 watchfiles.main INFO 1 change detected
+15:28:00,355 uvicorn.error INFO Started server process [71328]
+15:28:00,356 uvicorn.error INFO Waiting for application startup.
+15:28:00,356 uvicorn.error INFO Application startup complete.
+15:28:00,522 watchfiles.main INFO 3 changes detected
+15:28:12,511 watchfiles.main INFO 1 change detected
+15:28:13,582 watchfiles.main INFO 3 changes detected
+15:28:46,59 watchfiles.main INFO 1 change detected
+15:28:46,60 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+15:28:46,160 uvicorn.error INFO Shutting down
+15:28:46,263 uvicorn.error INFO Waiting for application shutdown.
+15:28:46,263 uvicorn.error INFO Application shutdown complete.
+15:28:46,264 uvicorn.error INFO Finished server process [71328]
+15:28:46,632 watchfiles.main INFO 1 change detected
+15:28:46,952 uvicorn.error INFO Started server process [71425]
+15:28:46,953 uvicorn.error INFO Waiting for application startup.
+15:28:46,954 uvicorn.error INFO Application startup complete.
+15:28:46,997 watchfiles.main INFO 3 changes detected
+15:28:59,541 watchfiles.main INFO 1 change detected
+15:28:59,541 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:28:59,592 uvicorn.error INFO Shutting down
+15:28:59,694 uvicorn.error INFO Waiting for application shutdown.
+15:28:59,696 uvicorn.error INFO Application shutdown complete.
+15:28:59,697 uvicorn.error INFO Finished server process [71425]
+15:29:00,68 watchfiles.main INFO 1 change detected
+15:29:00,356 uvicorn.error INFO Started server process [71462]
+15:29:00,357 uvicorn.error INFO Waiting for application startup.
+15:29:00,357 uvicorn.error INFO Application startup complete.
+15:29:00,432 watchfiles.main INFO 3 changes detected
+15:29:01,60 watchfiles.main INFO 1 change detected
+15:29:01,60 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:29:01,64 uvicorn.error INFO Shutting down
+15:29:01,165 uvicorn.error INFO Waiting for application shutdown.
+15:29:01,166 uvicorn.error INFO Application shutdown complete.
+15:29:01,166 uvicorn.error INFO Finished server process [71462]
+15:29:01,587 watchfiles.main INFO 4 changes detected
+15:29:01,700 uvicorn.error INFO Started server process [71467]
+15:29:01,701 uvicorn.error INFO Waiting for application startup.
+15:29:01,701 uvicorn.error INFO Application startup complete.
+15:29:17,586 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+15:29:17,623 root INFO Error: name 'cit' is not defined
+15:29:31,798 watchfiles.main INFO 1 change detected
+15:29:31,798 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:29:31,870 uvicorn.error INFO Shutting down
+15:29:31,972 uvicorn.error INFO Waiting for application shutdown.
+15:29:31,974 uvicorn.error INFO Application shutdown complete.
+15:29:31,975 uvicorn.error INFO Finished server process [71467]
+15:29:32,339 watchfiles.main INFO 1 change detected
+15:29:32,653 uvicorn.error INFO Started server process [71534]
+15:29:32,654 uvicorn.error INFO Waiting for application startup.
+15:29:32,655 uvicorn.error INFO Application startup complete.
+15:29:32,695 watchfiles.main INFO 3 changes detected
+15:29:34,70 watchfiles.main INFO 1 change detected
+15:29:34,71 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:29:34,171 uvicorn.error INFO Shutting down
+15:29:34,272 uvicorn.error INFO Waiting for application shutdown.
+15:29:34,273 uvicorn.error INFO Application shutdown complete.
+15:29:34,274 uvicorn.error INFO Finished server process [71534]
+15:29:34,699 watchfiles.main INFO 4 changes detected
+15:29:34,867 uvicorn.error INFO Started server process [71543]
+15:29:34,868 uvicorn.error INFO Waiting for application startup.
+15:29:34,868 uvicorn.error INFO Application startup complete.
+15:29:38,607 watchfiles.main INFO 1 change detected
+15:29:38,608 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:29:38,708 uvicorn.error INFO Shutting down
+15:29:38,810 uvicorn.error INFO Waiting for application shutdown.
+15:29:38,811 uvicorn.error INFO Application shutdown complete.
+15:29:38,811 uvicorn.error INFO Finished server process [71543]
+15:29:39,232 watchfiles.main INFO 4 changes detected
+15:29:39,369 uvicorn.error INFO Started server process [71563]
+15:29:39,370 uvicorn.error INFO Waiting for application startup.
+15:29:39,370 uvicorn.error INFO Application startup complete.
+15:29:46,255 watchfiles.main INFO 1 change detected
+15:29:46,256 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:29:46,348 uvicorn.error INFO Shutting down
+15:29:46,450 uvicorn.error INFO Waiting for application shutdown.
+15:29:46,450 uvicorn.error INFO Application shutdown complete.
+15:29:46,451 uvicorn.error INFO Finished server process [71563]
+15:29:46,875 watchfiles.main INFO 4 changes detected
+15:29:46,997 uvicorn.error INFO Started server process [71577]
+15:29:46,999 uvicorn.error INFO Waiting for application startup.
+15:29:46,999 uvicorn.error INFO Application startup complete.
+15:30:01,127 watchfiles.main INFO 1 change detected
+15:30:01,127 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:30:01,155 uvicorn.error INFO Shutting down
+15:30:01,256 uvicorn.error INFO Waiting for application shutdown.
+15:30:01,257 uvicorn.error INFO Application shutdown complete.
+15:30:01,257 uvicorn.error INFO Finished server process [71577]
+15:30:01,682 watchfiles.main INFO 4 changes detected
+15:30:01,812 uvicorn.error INFO Started server process [71612]
+15:30:01,814 uvicorn.error INFO Waiting for application startup.
+15:30:01,814 uvicorn.error INFO Application startup complete.
+15:30:09,106 watchfiles.main INFO 1 change detected
+15:30:09,107 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+15:30:09,190 uvicorn.error INFO Shutting down
+15:30:09,292 uvicorn.error INFO Waiting for application shutdown.
+15:30:09,293 uvicorn.error INFO Application shutdown complete.
+15:30:09,294 uvicorn.error INFO Finished server process [71612]
+15:30:09,719 watchfiles.main INFO 4 changes detected
+15:30:09,869 uvicorn.error INFO Started server process [71638]
+15:30:09,870 uvicorn.error INFO Waiting for application startup.
+15:30:09,871 uvicorn.error INFO Application startup complete.
+15:30:13,890 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+15:30:13,935 root INFO Error: name 'cit' is not defined
+15:31:00,59 watchfiles.main INFO 1 change detected
+15:31:00,60 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+15:31:00,131 uvicorn.error INFO Shutting down
+15:31:00,233 uvicorn.error INFO Waiting for application shutdown.
+15:31:00,234 uvicorn.error INFO Application shutdown complete.
+15:31:00,235 uvicorn.error INFO Finished server process [71638]
+15:31:00,607 watchfiles.main INFO 1 change detected
+15:31:00,846 uvicorn.error INFO Started server process [71736]
+15:31:00,847 uvicorn.error INFO Waiting for application startup.
+15:31:00,848 uvicorn.error INFO Application startup complete.
+15:31:00,971 watchfiles.main INFO 3 changes detected
+15:31:07,905 httpx INFO HTTP Request: POST https://api.novita.ai/v3/openai/chat/completions "HTTP/1.1 200 OK"
+15:31:07,950 root INFO Question: What do your father do?
+15:31:07,950 root INFO Last 3 Responses: 
+15:31:07,950 root INFO Response: I don't have a father or personal experiences. I'm a conversational AI, so I don't have a personal life or family. What's on your mind?
+15:31:08,435 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+15:31:08,441 root INFO Logged to Supabase: data=[{'id': 1908, 'user_question': 'What do your father do?', 'bot_response': "I don't have a father or personal experiences. I'm a conversational AI, so I don't have a personal life or family. What's on your mind?", 'cit': '0', 'drt': '0', 'rgt': '2970.72', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T10:01:07.95648', 'relative_data': ''}] count=None
+15:31:18,714 watchfiles.main INFO 1 change detected
+15:31:19,832 watchfiles.main INFO 3 changes detected
+15:43:54,550 watchfiles.main INFO 1 change detected
+15:43:55,624 watchfiles.main INFO 3 changes detected
+16:04:12,950 watchfiles.main INFO 1 change detected
+16:04:14,17 watchfiles.main INFO 3 changes detected
+16:04:23,591 watchfiles.main INFO 1 change detected
+16:04:23,592 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:04:23,608 uvicorn.error INFO Shutting down
+16:04:23,713 uvicorn.error INFO Waiting for application shutdown.
+16:04:23,715 uvicorn.error INFO Application shutdown complete.
+16:04:23,715 uvicorn.error INFO Finished server process [71736]
+16:04:24,91 watchfiles.main INFO 1 change detected
+16:04:24,784 watchfiles.main INFO 3 changes detected
+16:04:24,868 uvicorn.error INFO Started server process [75175]
+16:04:24,869 uvicorn.error INFO Waiting for application startup.
+16:04:24,870 uvicorn.error INFO Application startup complete.
+16:06:01,762 watchfiles.main INFO 1 change detected
+16:06:04,437 watchfiles.main INFO 1 change detected
+16:06:06,245 watchfiles.main INFO 1 change detected
+16:06:36,712 watchfiles.main INFO 1 change detected
+16:06:36,712 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:06:36,797 uvicorn.error INFO Shutting down
+16:06:36,899 uvicorn.error INFO Waiting for application shutdown.
+16:06:36,901 uvicorn.error INFO Application shutdown complete.
+16:06:36,902 uvicorn.error INFO Finished server process [75175]
+16:06:37,277 watchfiles.main INFO 1 change detected
+16:06:37,605 uvicorn.error INFO Started server process [75401]
+16:06:37,606 uvicorn.error INFO Waiting for application startup.
+16:06:37,606 uvicorn.error INFO Application startup complete.
+16:06:37,638 watchfiles.main INFO 3 changes detected
+16:07:06,763 watchfiles.main INFO 1 change detected
+16:07:14,41 watchfiles.main INFO 1 change detected
+16:07:15,109 watchfiles.main INFO 3 changes detected
+16:07:24,773 watchfiles.main INFO 1 change detected
+16:07:24,774 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:07:24,788 uvicorn.error INFO Shutting down
+16:07:24,891 uvicorn.error INFO Waiting for application shutdown.
+16:07:24,894 uvicorn.error INFO Application shutdown complete.
+16:07:24,895 uvicorn.error INFO Finished server process [75401]
+16:07:25,267 watchfiles.main INFO 1 change detected
+16:07:28,226 watchfiles.main INFO 1 change detected
+16:07:28,226 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:07:28,752 watchfiles.main INFO 3 changes detected
+16:07:28,828 uvicorn.error INFO Started server process [75532]
+16:07:28,829 uvicorn.error INFO Waiting for application startup.
+16:07:28,829 uvicorn.error INFO Application startup complete.
+16:10:15,162 watchfiles.main INFO 1 change detected
+16:10:16,223 watchfiles.main INFO 3 changes detected
+16:10:23,97 watchfiles.main INFO 1 change detected
+16:10:23,98 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:10:23,118 uvicorn.error INFO Shutting down
+16:10:23,221 uvicorn.error INFO Waiting for application shutdown.
+16:10:23,221 uvicorn.error INFO Application shutdown complete.
+16:10:23,222 uvicorn.error INFO Finished server process [75532]
+16:10:23,589 watchfiles.main INFO 1 change detected
+16:10:23,799 uvicorn.error INFO Started server process [75796]
+16:10:23,800 uvicorn.error INFO Waiting for application startup.
+16:10:23,800 uvicorn.error INFO Application startup complete.
+16:10:23,955 watchfiles.main INFO 3 changes detected
+16:10:34,678 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:10:34,685 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:10:53,59 watchfiles.main INFO 1 change detected
+16:10:53,59 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:10:53,76 uvicorn.error INFO Shutting down
+16:10:53,178 uvicorn.error INFO Waiting for application shutdown.
+16:10:53,179 uvicorn.error INFO Application shutdown complete.
+16:10:53,179 uvicorn.error INFO Finished server process [75796]
+16:10:53,546 watchfiles.main INFO 1 change detected
+16:10:53,861 uvicorn.error INFO Started server process [75860]
+16:10:53,862 uvicorn.error INFO Waiting for application startup.
+16:10:53,862 uvicorn.error INFO Application startup complete.
+16:10:53,911 watchfiles.main INFO 3 changes detected
+16:10:55,140 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:10:55,146 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:11:06,639 watchfiles.main INFO 1 change detected
+16:11:06,640 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:11:06,676 uvicorn.error INFO Shutting down
+16:11:06,779 uvicorn.error INFO Waiting for application shutdown.
+16:11:06,780 uvicorn.error INFO Application shutdown complete.
+16:11:06,781 uvicorn.error INFO Finished server process [75860]
+16:11:07,152 watchfiles.main INFO 1 change detected
+16:11:07,395 uvicorn.error INFO Started server process [75889]
+16:11:07,397 uvicorn.error INFO Waiting for application startup.
+16:11:07,397 uvicorn.error INFO Application startup complete.
+16:11:07,509 watchfiles.main INFO 3 changes detected
+16:11:09,179 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:11:09,186 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:11:15,744 watchfiles.main INFO 1 change detected
+16:11:15,745 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:11:15,759 uvicorn.error INFO Shutting down
+16:11:15,861 uvicorn.error INFO Waiting for application shutdown.
+16:11:15,862 uvicorn.error INFO Application shutdown complete.
+16:11:15,862 uvicorn.error INFO Finished server process [75889]
+16:11:16,229 watchfiles.main INFO 1 change detected
+16:11:16,431 uvicorn.error INFO Started server process [75913]
+16:11:16,432 uvicorn.error INFO Waiting for application startup.
+16:11:16,433 uvicorn.error INFO Application startup complete.
+16:11:16,595 watchfiles.main INFO 3 changes detected
+16:11:17,171 watchfiles.main INFO 1 change detected
+16:11:17,172 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:11:17,240 uvicorn.error INFO Shutting down
+16:11:17,342 uvicorn.error INFO Waiting for application shutdown.
+16:11:17,343 uvicorn.error INFO Application shutdown complete.
+16:11:17,344 uvicorn.error INFO Finished server process [75913]
+16:11:17,716 watchfiles.main INFO 1 change detected
+16:11:17,924 uvicorn.error INFO Started server process [75915]
+16:11:17,925 uvicorn.error INFO Waiting for application startup.
+16:11:17,925 uvicorn.error INFO Application startup complete.
+16:11:18,79 watchfiles.main INFO 3 changes detected
+16:11:44,605 uvicorn.error INFO Shutting down
+16:11:44,708 uvicorn.error INFO Waiting for application shutdown.
+16:11:44,711 uvicorn.error INFO Application shutdown complete.
+16:11:44,711 uvicorn.error INFO Finished server process [75915]
+16:11:44,719 uvicorn.error INFO Stopping reloader process [70704]
+16:11:47,137 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/MM-Mark1/cv-chat/python-server']
+16:11:47,137 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+16:11:47,138 uvicorn.error INFO Started reloader process [75981] using WatchFiles
+16:11:47,662 uvicorn.error INFO Started server process [75984]
+16:11:47,663 uvicorn.error INFO Waiting for application startup.
+16:11:47,663 uvicorn.error INFO Application startup complete.
+16:11:50,140 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:11:50,145 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:12:15,445 watchfiles.main INFO 1 change detected
+16:12:15,447 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:12:15,514 uvicorn.error INFO Shutting down
+16:12:15,621 uvicorn.error INFO Waiting for application shutdown.
+16:12:15,625 uvicorn.error INFO Application shutdown complete.
+16:12:15,625 uvicorn.error INFO Finished server process [75984]
+16:12:15,997 watchfiles.main INFO 1 change detected
+16:12:16,192 uvicorn.error INFO Started server process [76039]
+16:12:16,193 uvicorn.error INFO Waiting for application startup.
+16:12:16,194 uvicorn.error INFO Application startup complete.
+16:12:16,360 watchfiles.main INFO 3 changes detected
+16:12:17,790 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:12:17,795 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:12:37,395 watchfiles.main INFO 1 change detected
+16:12:37,396 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:12:37,402 uvicorn.error INFO Shutting down
+16:12:37,503 uvicorn.error INFO Waiting for application shutdown.
+16:12:37,504 uvicorn.error INFO Application shutdown complete.
+16:12:37,504 uvicorn.error INFO Finished server process [76039]
+16:12:37,872 watchfiles.main INFO 1 change detected
+16:12:38,122 uvicorn.error INFO Started server process [76077]
+16:12:38,123 uvicorn.error INFO Waiting for application startup.
+16:12:38,123 uvicorn.error INFO Application startup complete.
+16:12:38,230 watchfiles.main INFO 3 changes detected
+16:12:39,657 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:12:39,663 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:13:10,287 watchfiles.main INFO 1 change detected
+16:13:10,289 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:13:10,292 uvicorn.error INFO Shutting down
+16:13:10,395 uvicorn.error INFO Waiting for application shutdown.
+16:13:10,395 uvicorn.error INFO Application shutdown complete.
+16:13:10,396 uvicorn.error INFO Finished server process [76077]
+16:13:10,768 watchfiles.main INFO 1 change detected
+16:13:10,969 uvicorn.error INFO Started server process [76137]
+16:13:10,971 uvicorn.error INFO Waiting for application startup.
+16:13:10,971 uvicorn.error INFO Application startup complete.
+16:13:11,128 watchfiles.main INFO 3 changes detected
+16:13:12,639 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:13:12,644 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:13:16,301 watchfiles.main INFO 1 change detected
+16:13:17,363 watchfiles.main INFO 3 changes detected
+16:13:20,899 watchfiles.main INFO 1 change detected
+16:13:20,900 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:13:20,937 uvicorn.error INFO Shutting down
+16:13:21,39 uvicorn.error INFO Waiting for application shutdown.
+16:13:21,40 uvicorn.error INFO Application shutdown complete.
+16:13:21,40 uvicorn.error INFO Finished server process [76137]
+16:13:21,413 watchfiles.main INFO 1 change detected
+16:13:21,620 uvicorn.error INFO Started server process [76179]
+16:13:21,622 uvicorn.error INFO Waiting for application startup.
+16:13:21,622 uvicorn.error INFO Application startup complete.
+16:13:21,775 watchfiles.main INFO 3 changes detected
+16:13:24,885 watchfiles.main INFO 1 change detected
+16:13:24,886 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:13:24,958 uvicorn.error INFO Shutting down
+16:13:25,58 uvicorn.error INFO Waiting for application shutdown.
+16:13:25,59 uvicorn.error INFO Application shutdown complete.
+16:13:25,60 uvicorn.error INFO Finished server process [76179]
+16:13:25,424 watchfiles.main INFO 1 change detected
+16:13:26,650 watchfiles.main INFO 1 change detected
+16:13:26,651 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:13:27,181 watchfiles.main INFO 3 changes detected
+16:13:27,226 uvicorn.error INFO Started server process [76196]
+16:13:27,227 uvicorn.error INFO Waiting for application startup.
+16:13:27,228 uvicorn.error INFO Application startup complete.
+16:13:29,336 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:13:29,343 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:13:34,170 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:13:34,171 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:13:36,423 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:13:36,424 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:14:00,573 watchfiles.main INFO 1 change detected
+16:14:00,576 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:14:00,674 uvicorn.error INFO Shutting down
+16:14:00,776 uvicorn.error INFO Waiting for application shutdown.
+16:14:00,777 uvicorn.error INFO Application shutdown complete.
+16:14:00,777 uvicorn.error INFO Finished server process [76196]
+16:14:01,145 watchfiles.main INFO 1 change detected
+16:14:01,340 uvicorn.error INFO Started server process [76257]
+16:14:01,341 uvicorn.error INFO Waiting for application startup.
+16:14:01,341 uvicorn.error INFO Application startup complete.
+16:14:01,509 watchfiles.main INFO 3 changes detected
+16:14:03,219 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:14:03,226 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:14:27,192 watchfiles.main INFO 1 change detected
+16:14:27,192 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:14:27,291 uvicorn.error INFO Shutting down
+16:14:27,393 uvicorn.error INFO Waiting for application shutdown.
+16:14:27,394 uvicorn.error INFO Application shutdown complete.
+16:14:27,394 uvicorn.error INFO Finished server process [76257]
+16:14:27,768 watchfiles.main INFO 1 change detected
+16:14:28,130 watchfiles.main INFO 3 changes detected
+16:14:28,164 uvicorn.error INFO Started server process [76304]
+16:14:28,166 uvicorn.error INFO Waiting for application startup.
+16:14:28,166 uvicorn.error INFO Application startup complete.
+16:14:29,339 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:14:29,345 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:16:07,785 watchfiles.main INFO 1 change detected
+16:16:13,954 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:16:13,955 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:16:17,414 watchfiles.main INFO 1 change detected
+16:16:18,534 watchfiles.main INFO 3 changes detected
+16:16:21,5 watchfiles.main INFO 1 change detected
+16:16:49,560 watchfiles.main INFO 1 change detected
+16:17:03,668 watchfiles.main INFO 1 change detected
+16:17:03,670 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:17:03,685 uvicorn.error INFO Shutting down
+16:17:03,787 uvicorn.error INFO Waiting for application shutdown.
+16:17:03,788 uvicorn.error INFO Application shutdown complete.
+16:17:03,789 uvicorn.error INFO Finished server process [76304]
+16:17:04,159 watchfiles.main INFO 1 change detected
+16:17:04,497 uvicorn.error INFO Started server process [76599]
+16:17:04,499 uvicorn.error INFO Waiting for application startup.
+16:17:04,499 uvicorn.error INFO Application startup complete.
+16:17:04,520 watchfiles.main INFO 3 changes detected
+16:17:11,583 watchfiles.main INFO 1 change detected
+16:17:11,583 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:17:11,682 uvicorn.error INFO Shutting down
+16:17:11,784 uvicorn.error INFO Waiting for application shutdown.
+16:17:11,784 uvicorn.error INFO Application shutdown complete.
+16:17:11,785 uvicorn.error INFO Finished server process [76599]
+16:17:12,154 watchfiles.main INFO 1 change detected
+16:17:12,353 uvicorn.error INFO Started server process [76621]
+16:17:12,354 uvicorn.error INFO Waiting for application startup.
+16:17:12,354 uvicorn.error INFO Application startup complete.
+16:17:12,513 watchfiles.main INFO 3 changes detected
+16:17:15,912 root INFO Error: name 'api_key' is not defined
+16:17:25,459 root INFO Error: name 'api_key' is not defined
+16:17:39,325 watchfiles.main INFO 1 change detected
+16:17:39,326 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+16:17:39,363 uvicorn.error INFO Shutting down
+16:17:39,465 uvicorn.error INFO Waiting for application shutdown.
+16:17:39,466 uvicorn.error INFO Application shutdown complete.
+16:17:39,467 uvicorn.error INFO Finished server process [76621]
+16:17:39,834 watchfiles.main INFO 1 change detected
+16:17:40,76 uvicorn.error INFO Started server process [76667]
+16:17:40,78 uvicorn.error INFO Waiting for application startup.
+16:17:40,78 uvicorn.error INFO Application startup complete.
+16:17:40,196 watchfiles.main INFO 3 changes detected
+16:17:41,554 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+16:17:41,559 root INFO Error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************************************************************************************D1Kk. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+16:18:01,273 uvicorn.error INFO Shutting down
+16:18:01,377 uvicorn.error INFO Finished server process [76667]
+16:18:01,386 uvicorn.error INFO Stopping reloader process [75981]
+16:18:03,969 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/MM-Mark1/cv-chat/python-server']
+16:18:03,969 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+16:18:03,970 uvicorn.error INFO Started reloader process [76734] using WatchFiles
+16:18:04,492 uvicorn.error INFO Started server process [76737]
+16:18:04,493 uvicorn.error INFO Waiting for application startup.
+16:18:04,494 uvicorn.error INFO Application startup complete.
+16:18:07,549 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:18:07,593 root INFO Question: What do your father do?
+16:18:07,593 root INFO Last 3 Responses: 
+16:18:07,593 root INFO Response: I'm just a virtual assistant, so I don't have a family or a father. But I'm here to help with any other questions you might have!
+16:18:08,27 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+16:18:08,33 root INFO Logged to Supabase: data=[{'id': 1909, 'user_question': 'What do your father do?', 'bot_response': "I'm just a virtual assistant, so I don't have a family or a father. But I'm here to help with any other questions you might have!", 'cit': '0', 'drt': '0', 'rgt': '1408.11', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T10:48:07.599533', 'relative_data': ''}] count=None
+16:27:12,11 watchfiles.main INFO 1 change detected
+16:27:13,13 watchfiles.main INFO 3 changes detected
+17:01:28,570 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:01:28,574 root INFO Question: Hii
+17:01:28,574 root INFO Last 3 Responses: 
+17:01:28,574 root INFO Response: Hello, dear! How are you feeling today? 😊 Curious about anything or maybe in the mood for a little philosophical musing?
+17:01:29,76 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:01:29,82 root INFO Logged to Supabase: data=[{'id': 1910, 'user_question': 'Hii', 'bot_response': 'Hello, dear! How are you feeling today? 😊 Curious about anything or maybe in the mood for a little philosophical musing?', 'cit': '0', 'drt': '0', 'rgt': '1659.45', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:31:28.576385', 'relative_data': ''}] count=None
+17:01:56,695 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:01:56,696 root INFO Question: hi
+17:01:56,696 root INFO Last 3 Responses: 
+17:01:56,696 root INFO Response: Hello, dear! How are you feeling today? 😊✨
+17:01:56,852 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:01:56,854 root INFO Logged to Supabase: data=[{'id': 1911, 'user_question': 'hi', 'bot_response': 'Hello, dear! How are you feeling today? 😊✨', 'cit': '0', 'drt': '0', 'rgt': '1431.73', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:31:56.700439', 'relative_data': ''}] count=None
+17:02:20,361 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:02:20,363 root INFO Question: Hii
+17:02:20,363 root INFO Last 3 Responses: 
+17:02:20,363 root INFO Response: Hello dear! How are you feeling today? 🌼 Curious to know what's on your mind or any topic you'd love to dive into?
+17:02:20,515 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:02:20,521 root INFO Logged to Supabase: data=[{'id': 1912, 'user_question': 'Hii', 'bot_response': "Hello dear! How are you feeling today? 🌼 Curious to know what's on your mind or any topic you'd love to dive into?", 'cit': '0', 'drt': '0', 'rgt': '1497.47', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:32:20.36557', 'relative_data': ''}] count=None
+17:03:01,314 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:03:01,477 root INFO Question: noting
+17:03:01,477 root INFO Last 3 Responses: User: Hii
+Bot: Hello dear! How are you feeling today? 🌼 Curious to know what's on your mind or any topic you'd love to dive into?
+17:03:01,477 root INFO Response: Hello, dear! How are you today? I'm here to chat about anything that's on your mind, whether it's poetry, history, or just the wonders of life. 😊
+17:03:01,656 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:03:01,660 root INFO Logged to Supabase: data=[{'id': 1913, 'user_question': 'noting', 'bot_response': "Hello, dear! How are you today? I'm here to chat about anything that's on your mind, whether it's poetry, history, or just the wonders of life. 😊", 'cit': '0', 'drt': '0', 'rgt': '2105.27', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:33:01.479533', 'relative_data': ''}] count=None
+17:03:24,898 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:03:24,901 root INFO Question: nothing
+17:03:24,901 root INFO Last 3 Responses: User: Hii
+Bot: Hello dear! How are you feeling today? 🌼 Curious to know what's on your mind or any topic you'd love to dive into?
+User: noting
+Bot: Hello, dear! How are you today? I'm here to chat about anything that's on your mind, whether it's poetry, history, or just the wonders of life. 😊
+17:03:24,902 root INFO Response: Hey dear, I'm sensing something on your mind. How about we dive into a poem or a thought about life? 🌟 Sometimes a different perspective can spark new conversations.
+17:03:25,69 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:03:25,73 root INFO Logged to Supabase: data=[{'id': 1914, 'user_question': 'nothing', 'bot_response': "Hey dear, I'm sensing something on your mind. How about we dive into a poem or a thought about life? 🌟 Sometimes a different perspective can spark new conversations.", 'cit': '0', 'drt': '0', 'rgt': '1633.32', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:33:24.90478', 'relative_data': ''}] count=None
+17:03:43,628 watchfiles.main INFO 1 change detected
+17:03:44,738 watchfiles.main INFO 3 changes detected
+17:04:15,941 watchfiles.main INFO 1 change detected
+17:04:15,942 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+17:04:16,45 uvicorn.error INFO Shutting down
+17:04:16,148 uvicorn.error INFO Waiting for application shutdown.
+17:04:16,150 uvicorn.error INFO Application shutdown complete.
+17:04:16,151 uvicorn.error INFO Finished server process [76737]
+17:04:16,525 watchfiles.main INFO 1 change detected
+17:04:16,898 uvicorn.error INFO Started server process [82069]
+17:04:16,899 uvicorn.error INFO Waiting for application startup.
+17:04:16,899 uvicorn.error INFO Application startup complete.
+17:04:16,996 watchfiles.main INFO 3 changes detected
+17:05:35,359 watchfiles.main INFO 1 change detected
+17:05:35,361 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+17:05:35,431 uvicorn.error INFO Shutting down
+17:05:35,534 uvicorn.error INFO Waiting for application shutdown.
+17:05:35,534 uvicorn.error INFO Application shutdown complete.
+17:05:35,535 uvicorn.error INFO Finished server process [82069]
+17:05:35,907 watchfiles.main INFO 1 change detected
+17:05:36,283 uvicorn.error INFO Started server process [82319]
+17:05:36,284 uvicorn.error INFO Waiting for application startup.
+17:05:36,284 uvicorn.error INFO Application startup complete.
+17:05:36,374 watchfiles.main INFO 3 changes detected
+17:05:44,888 watchfiles.main INFO 1 change detected
+17:05:44,888 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+17:05:44,970 uvicorn.error INFO Shutting down
+17:05:45,72 uvicorn.error INFO Waiting for application shutdown.
+17:05:45,73 uvicorn.error INFO Application shutdown complete.
+17:05:45,73 uvicorn.error INFO Finished server process [82319]
+17:05:45,437 watchfiles.main INFO 1 change detected
+17:05:45,697 uvicorn.error INFO Started server process [82349]
+17:05:45,698 uvicorn.error INFO Waiting for application startup.
+17:05:45,698 uvicorn.error INFO Application startup complete.
+17:05:45,797 watchfiles.main INFO 3 changes detected
+17:06:14,736 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:06:14,778 root INFO Question: nothing
+17:06:14,778 root INFO Last 3 Responses: User: Hii
+Bot: Hello dear! How are you feeling today? 🌼 Curious to know what's on your mind or any topic you'd love to dive into?
+User: noting
+Bot: Hello, dear! How are you today? I'm here to chat about anything that's on your mind, whether it's poetry, history, or just the wonders of life. 😊
+User: nothing
+Bot: Hey dear, I'm sensing something on your mind. How about we dive into a poem or a thought about life? 🌟 Sometimes a different perspective can spark new conversations.
+17:06:14,778 root INFO Response: Hey dear, it seems like there's something beneath the surface. Is there a specific thought you'd like to unravel together? Or perhaps dive into a favorite poem for a fresh perspective? 🌟
+17:06:15,179 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:06:15,186 root INFO Logged to Supabase: data=[{'id': 1915, 'user_question': 'nothing', 'bot_response': "Hey dear, it seems like there's something beneath the surface. Is there a specific thought you'd like to unravel together? Or perhaps dive into a favorite poem for a fresh perspective? 🌟", 'cit': '0', 'drt': '0', 'rgt': '1774.01', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:36:14.782477', 'relative_data': ''}] count=None
+17:06:29,546 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:06:29,548 root INFO Question: hii
+17:06:29,549 root INFO Last 3 Responses: 
+17:06:29,549 root INFO Response: Hello, dear! How are you feeling today? 😊
+17:06:29,708 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:06:29,712 root INFO Logged to Supabase: data=[{'id': 1916, 'user_question': 'hii', 'bot_response': 'Hello, dear! How are you feeling today? 😊', 'cit': '0', 'drt': '0', 'rgt': '1476.31', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:36:29.55211', 'relative_data': ''}] count=None
+17:06:33,641 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:06:33,646 root INFO Question: hii
+17:06:33,647 root INFO Last 3 Responses: User: hii
+Bot: Hello, dear! How are you feeling today? 😊
+17:06:33,647 root INFO Response: Hello again, dear! Kya chal raha hai aajkal? 😊
+17:06:33,733 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:06:33,736 root INFO Logged to Supabase: data=[{'id': 1917, 'user_question': 'hii', 'bot_response': 'Hello again, dear! Kya chal raha hai aajkal? 😊', 'cit': '0', 'drt': '0', 'rgt': '898.31', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:36:33.649339', 'relative_data': ''}] count=None
+17:06:39,46 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:06:39,51 root INFO Question: hii
+17:06:39,51 root INFO Last 3 Responses: User: hii
+Bot: Hello, dear! How are you feeling today? 😊
+User: hii
+Bot: Hello again, dear! Kya chal raha hai aajkal? 😊
+17:06:39,51 root INFO Response: Hello, dear! It's nice to see you again. What's on your mind today? 😊
+17:06:39,220 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:06:39,221 root INFO Logged to Supabase: data=[{'id': 1918, 'user_question': 'hii', 'bot_response': "Hello, dear! It's nice to see you again. What's on your mind today? 😊", 'cit': '0', 'drt': '0', 'rgt': '929.67', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:36:39.055127', 'relative_data': ''}] count=None
+17:06:46,693 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:06:46,695 root INFO Question: hii
+17:06:46,695 root INFO Last 3 Responses: User: hii
+Bot: Hello, dear! How are you feeling today? 😊
+User: hii
+Bot: Hello again, dear! Kya chal raha hai aajkal? 😊
+User: hii
+Bot: Hello, dear! It's nice to see you again. What's on your mind today? 😊
+17:06:46,695 root INFO Response: Hello, dear! Looks like you're in a greeting mood today. Anything special on your mind? 😊
+17:06:46,860 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:06:46,864 root INFO Logged to Supabase: data=[{'id': 1919, 'user_question': 'hii', 'bot_response': "Hello, dear! Looks like you're in a greeting mood today. Anything special on your mind? 😊", 'cit': '0', 'drt': '0', 'rgt': '1497.14', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:36:46.697635', 'relative_data': ''}] count=None
+17:06:58,450 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:06:58,460 root INFO Question: nothing
+17:06:58,460 root INFO Last 3 Responses: User: hii
+Bot: Hello, dear! How are you feeling today? 😊
+User: hii
+Bot: Hello again, dear! Kya chal raha hai aajkal? 😊
+User: hii
+Bot: Hello, dear! It's nice to see you again. What's on your mind today? 😊
+User: hii
+Bot: Hello, dear! Looks like you're in a greeting mood today. Anything special on your mind? 😊
+17:06:58,460 root INFO Response: Ah, the quietness of "nothing." Sometimes silence speaks volumes, doesn’t it, dear? What's your soul murmuring about today?
+17:06:58,616 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:06:58,620 root INFO Logged to Supabase: data=[{'id': 1920, 'user_question': 'nothing', 'bot_response': 'Ah, the quietness of "nothing." Sometimes silence speaks volumes, doesn’t it, dear? What\'s your soul murmuring about today?', 'cit': '0', 'drt': '0', 'rgt': '1461.95', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:36:58.462924', 'relative_data': ''}] count=None
+17:07:11,715 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:07:11,715 root INFO Question: nothing
+17:07:11,715 root INFO Last 3 Responses: User: hii
+Bot: Hello again, dear! Kya chal raha hai aajkal? 😊
+User: hii
+Bot: Hello, dear! It's nice to see you again. What's on your mind today? 😊
+User: hii
+Bot: Hello, dear! Looks like you're in a greeting mood today. Anything special on your mind? 😊
+User: nothing
+Bot: Ah, the quietness of "nothing." Sometimes silence speaks volumes, doesn’t it, dear? What's your soul murmuring about today?
+17:07:11,715 root INFO Response: Ah, dear, once again we find ourselves in the soothing embrace of “nothing.” It's like a pause between the notes of a beautiful ghazal. How are you feeling today? 
+17:07:11,886 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:07:11,890 root INFO Logged to Supabase: data=[{'id': 1921, 'user_question': 'nothing', 'bot_response': "Ah, dear, once again we find ourselves in the soothing embrace of “nothing.” It's like a pause between the notes of a beautiful ghazal. How are you feeling today? ", 'cit': '0', 'drt': '0', 'rgt': '1115.27', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:37:11.716446', 'relative_data': ''}] count=None
+17:07:41,75 watchfiles.main INFO 1 change detected
+17:07:42,142 watchfiles.main INFO 3 changes detected
+17:07:59,188 watchfiles.main INFO 1 change detected
+17:07:59,190 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+17:07:59,216 uvicorn.error INFO Shutting down
+17:07:59,317 uvicorn.error INFO Waiting for application shutdown.
+17:07:59,319 uvicorn.error INFO Application shutdown complete.
+17:07:59,320 uvicorn.error INFO Finished server process [82349]
+17:07:59,683 watchfiles.main INFO 1 change detected
+17:08:00,46 watchfiles.main INFO 3 changes detected
+17:08:00,120 uvicorn.error INFO Started server process [82716]
+17:08:00,122 uvicorn.error INFO Waiting for application startup.
+17:08:00,122 uvicorn.error INFO Application startup complete.
+17:08:02,441 watchfiles.main INFO 1 change detected
+17:08:02,441 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+17:08:02,446 uvicorn.error INFO Shutting down
+17:08:02,548 uvicorn.error INFO Waiting for application shutdown.
+17:08:02,549 uvicorn.error INFO Application shutdown complete.
+17:08:02,550 uvicorn.error INFO Finished server process [82716]
+17:08:02,924 watchfiles.main INFO 1 change detected
+17:08:03,172 uvicorn.error INFO Started server process [82732]
+17:08:03,173 uvicorn.error INFO Waiting for application startup.
+17:08:03,174 uvicorn.error INFO Application startup complete.
+17:08:03,286 watchfiles.main INFO 3 changes detected
+17:08:42,490 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:08:42,519 root INFO Question: Hey
+17:08:42,520 root INFO Last 3 Responses: 
+17:08:42,520 root INFO Response: Hey, dear! How are you feeling today? What's on your mind? 😊
+17:08:42,935 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:08:42,938 root INFO Logged to Supabase: data=[{'id': 1922, 'user_question': 'Hey', 'bot_response': "Hey, dear! How are you feeling today? What's on your mind? 😊", 'cit': '0', 'drt': '0', 'rgt': '995.69', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:38:42.523746', 'relative_data': ''}] count=None
+17:08:55,544 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:08:55,547 root INFO Question: nothing i am good
+17:08:55,547 root INFO Last 3 Responses: User: Hey
+Bot: Hey, dear! How are you feeling today? What's on your mind? 😊
+17:08:55,547 root INFO Response: Glad to hear that you're good, dear! 😊 What has been keeping you busy or inspired these days? Any new poetry or music you've been exploring?
+17:08:55,707 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:08:55,711 root INFO Logged to Supabase: data=[{'id': 1923, 'user_question': 'nothing i am good', 'bot_response': "Glad to hear that you're good, dear! 😊 What has been keeping you busy or inspired these days? Any new poetry or music you've been exploring?", 'cit': '0', 'drt': '0', 'rgt': '1599.26', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:38:55.549557', 'relative_data': ''}] count=None
+17:09:24,176 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:09:24,179 root INFO Question: vaisahi kuch
+17:09:24,179 root INFO Last 3 Responses: User: Hey
+Bot: Hey, dear! How are you feeling today? What's on your mind? 😊
+User: nothing i am good
+Bot: Glad to hear that you're good, dear! 😊 What has been keeping you busy or inspired these days? Any new poetry or music you've been exploring?
+17:09:24,179 root INFO Response: Ah, vaisahi kuch kah rahe ho? Koi khaas baat ya yaadein jinse mann joojh raha hai, dear? 😊 Kehein toh sahi, hum hain na sunne ko!
+17:09:24,355 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:09:24,360 root INFO Logged to Supabase: data=[{'id': 1924, 'user_question': 'vaisahi kuch', 'bot_response': 'Ah, vaisahi kuch kah rahe ho? Koi khaas baat ya yaadein jinse mann joojh raha hai, dear? 😊 Kehein toh sahi, hum hain na sunne ko!', 'cit': '0', 'drt': '0', 'rgt': '1806.69', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:39:24.182775', 'relative_data': ''}] count=None
+17:09:59,651 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+17:09:59,656 root INFO Question: Hey How are you today
+17:09:59,656 root INFO Last 3 Responses: 
+17:09:59,656 root INFO Response: Hello dear! I'm feeling quite lovely today, thank you. How are you doing, and what musings or thoughts are swirling around your mind today? 😊
+17:09:59,837 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+17:09:59,841 root INFO Logged to Supabase: data=[{'id': 1925, 'user_question': 'Hey How are you today', 'bot_response': "Hello dear! I'm feeling quite lovely today, thank you. How are you doing, and what musings or thoughts are swirling around your mind today? 😊", 'cit': '0', 'drt': '0', 'rgt': '1566.37', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T11:39:59.657612', 'relative_data': ''}] count=None
+17:11:05,854 watchfiles.main INFO 1 change detected
+17:11:07,312 watchfiles.main INFO 3 changes detected
+18:39:27,851 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+18:39:27,858 root INFO Question: Hey
+18:39:27,858 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+18:39:27,859 root INFO Response: Hey there! What's up?
+18:39:28,425 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+18:39:28,432 root INFO Logged to Supabase: data=[{'id': 1926, 'user_question': 'Hey', 'bot_response': "Hey there! What's up?", 'cit': '0', 'drt': '0', 'rgt': '1121.81', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:09:27.860255', 'relative_data': ''}] count=None
+18:39:50,328 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+18:39:50,329 root INFO Question: i am good what about you
+18:39:50,329 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hey there! What's up?
+18:39:50,329 root INFO Response: I'm doing great, thanks for asking! Anything exciting happening on your end?
+18:39:50,482 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+18:39:50,486 root INFO Logged to Supabase: data=[{'id': 1927, 'user_question': 'i am good what about you', 'bot_response': "I'm doing great, thanks for asking! Anything exciting happening on your end?", 'cit': '0', 'drt': '0', 'rgt': '752.27', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:09:50.33115', 'relative_data': ''}] count=None
+18:40:12,257 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+18:40:12,260 root INFO Question: No but everything is fine
+18:40:12,260 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hey there! What's up?
+User: i am good what about you
+Bot: I'm doing great, thanks for asking! Anything exciting happening on your end?
+18:40:12,260 root INFO Response: That's good to hear! Anything fun or interesting you're planning for today?
+18:40:12,419 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+18:40:12,421 root INFO Logged to Supabase: data=[{'id': 1928, 'user_question': 'No but everything is fine', 'bot_response': "That's good to hear! Anything fun or interesting you're planning for today?", 'cit': '0', 'drt': '0', 'rgt': '907.46', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:10:12.263383', 'relative_data': ''}] count=None
+18:45:37,998 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+18:45:38,2 root INFO Question: i am good
+18:45:38,3 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+18:45:38,3 root INFO Response: That's great to hear! What's been the highlight of your day so far?
+18:45:38,408 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+18:45:38,412 root INFO Logged to Supabase: data=[{'id': 1929, 'user_question': 'i am good', 'bot_response': "That's great to hear! What's been the highlight of your day so far?", 'cit': '0', 'drt': '0', 'rgt': '842.13', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:15:38.007178', 'relative_data': ''}] count=None
+18:48:33,87 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+18:48:33,91 root INFO Question: Hii
+18:48:33,91 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+18:48:33,91 root INFO Response: Hey there! How's it going?
+18:48:33,524 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+18:48:33,529 root INFO Logged to Supabase: data=[{'id': 1930, 'user_question': 'Hii', 'bot_response': "Hey there! How's it going?", 'cit': '0', 'drt': '0', 'rgt': '813.13', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:18:33.093666', 'relative_data': ''}] count=None
+19:00:56,787 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:00:56,790 root INFO Question: Hey
+19:00:56,790 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+19:00:56,790 root INFO Response: Hey! How's it going?
+19:00:57,300 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:00:57,307 root INFO Logged to Supabase: data=[{'id': 1931, 'user_question': 'Hey', 'bot_response': "Hey! How's it going?", 'cit': '0', 'drt': '0', 'rgt': '852.67', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:30:56.792782', 'relative_data': ''}] count=None
+19:01:14,858 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:01:14,862 root INFO Question: Nice to meet you
+19:01:14,862 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hey! How's it going?
+19:01:14,862 root INFO Response: Nice to meet you too! What's been the highlight of your day so far?
+19:01:15,30 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:01:15,31 root INFO Logged to Supabase: data=[{'id': 1932, 'user_question': 'Nice to meet you', 'bot_response': "Nice to meet you too! What's been the highlight of your day so far?", 'cit': '0', 'drt': '0', 'rgt': '853.38', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:31:14.868239', 'relative_data': ''}] count=None
+19:01:39,752 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:01:39,754 root INFO Question: just chilling
+19:01:39,754 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hey! How's it going?
+User: Nice to meet you
+Bot: Nice to meet you too! What's been the highlight of your day so far?
+19:01:39,754 root INFO Response: Sounds like a relaxing day! Got any plans coming up or just enjoying the moment?
+19:01:39,919 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:01:39,920 root INFO Logged to Supabase: data=[{'id': 1933, 'user_question': 'just chilling', 'bot_response': 'Sounds like a relaxing day! Got any plans coming up or just enjoying the moment?', 'cit': '0', 'drt': '0', 'rgt': '794.97', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:31:39.760729', 'relative_data': ''}] count=None
+19:01:58,675 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:01:58,677 root INFO Question: can you tell me astory
+19:01:58,677 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hey! How's it going?
+User: Nice to meet you
+Bot: Nice to meet you too! What's been the highlight of your day so far?
+User: just chilling
+Bot: Sounds like a relaxing day! Got any plans coming up or just enjoying the moment?
+19:01:58,677 root INFO Response: Sure! Here's a quick story for you: 
+
+Once upon a time in a quiet village, there was a curious little cat named Whiskers. Whiskers had always been fascinated by the forest on the outskirts of the village. One day, determined to uncover its secrets, Whiskers ventured into the woods. As the trees whispered around him, he stumbled upon a hidden glade filled with vibrant flowers and sparkling streams. There, he met a wise old turtle who shared tales of the forest's magic. Whiskers returned to the village with newfound wonder and, from then on, shared the stories with anyone who would listen. And so, the village embraced the enchantment of the forest, with Whiskers leading the charge. 
+
+What did you think of the story?
+19:01:58,854 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:01:58,855 root INFO Logged to Supabase: data=[{'id': 1934, 'user_question': 'can you tell me astory', 'bot_response': "Sure! Here's a quick story for you: \n\nOnce upon a time in a quiet village, there was a curious little cat named Whiskers. Whiskers had always been fascinated by the forest on the outskirts of the village. One day, determined to uncover its secrets, Whiskers ventured into the woods. As the trees whispered around him, he stumbled upon a hidden glade filled with vibrant flowers and sparkling streams. There, he met a wise old turtle who shared tales of the forest's magic. Whiskers returned to the village with newfound wonder and, from then on, shared the stories with anyone who would listen. And so, the village embraced the enchantment of the forest, with Whiskers leading the charge. \n\nWhat did you think of the story?", 'cit': '0', 'drt': '0', 'rgt': '1770.47', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:31:58.683487', 'relative_data': ''}] count=None
+19:02:46,671 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:02:46,679 root INFO Question: nice
+19:02:46,680 root INFO Last 3 Responses: User: Hey
+Bot: Hey! How's it going?
+User: Nice to meet you
+Bot: Nice to meet you too! What's been the highlight of your day so far?
+User: just chilling
+Bot: Sounds like a relaxing day! Got any plans coming up or just enjoying the moment?
+User: can you tell me astory
+Bot: Sure! Here's a quick story for you: 
+
+Once upon a time in a quiet village, there was a curious little cat named Whiskers. Whiskers had always been fascinated by the forest on the outskirts of the village. One day, determined to uncover its secrets, Whiskers ventured into the woods. As the trees whispered around him, he stumbled upon a hidden glade filled with vibrant flowers and sparkling streams. There, he met a wise old turtle who shared tales of the forest's magic. Whiskers returned to the village with newfound wonder and, from then on, shared the stories with anyone who would listen. And so, the village embraced the enchantment of the forest, with Whiskers leading the charge. 
+
+What did you think of the story?
+19:02:46,680 root INFO Response: Glad you liked it! What's on your mind today?
+19:02:46,856 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:02:46,857 root INFO Logged to Supabase: data=[{'id': 1935, 'user_question': 'nice', 'bot_response': "Glad you liked it! What's on your mind today?", 'cit': '0', 'drt': '0', 'rgt': '848.76', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:32:46.686378', 'relative_data': ''}] count=None
+19:03:02,942 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:03:02,944 root INFO Question: story is nice
+19:03:02,944 root INFO Last 3 Responses: User: Nice to meet you
+Bot: Nice to meet you too! What's been the highlight of your day so far?
+User: just chilling
+Bot: Sounds like a relaxing day! Got any plans coming up or just enjoying the moment?
+User: can you tell me astory
+Bot: Sure! Here's a quick story for you: 
+
+Once upon a time in a quiet village, there was a curious little cat named Whiskers. Whiskers had always been fascinated by the forest on the outskirts of the village. One day, determined to uncover its secrets, Whiskers ventured into the woods. As the trees whispered around him, he stumbled upon a hidden glade filled with vibrant flowers and sparkling streams. There, he met a wise old turtle who shared tales of the forest's magic. Whiskers returned to the village with newfound wonder and, from then on, shared the stories with anyone who would listen. And so, the village embraced the enchantment of the forest, with Whiskers leading the charge. 
+
+What did you think of the story?
+User: nice
+Bot: Glad you liked it! What's on your mind today?
+19:03:02,944 root INFO Response: I'm happy you enjoyed it! What's something you love about stories, or do you have a favorite one?
+19:03:03,115 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:03:03,115 root INFO Logged to Supabase: data=[{'id': 1936, 'user_question': 'story is nice', 'bot_response': "I'm happy you enjoyed it! What's something you love about stories, or do you have a favorite one?", 'cit': '0', 'drt': '0', 'rgt': '914.59', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:33:02.950089', 'relative_data': ''}] count=None
+19:03:23,455 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:03:23,458 root INFO Question: ok
+19:03:23,458 root INFO Last 3 Responses: User: just chilling
+Bot: Sounds like a relaxing day! Got any plans coming up or just enjoying the moment?
+User: can you tell me astory
+Bot: Sure! Here's a quick story for you: 
+
+Once upon a time in a quiet village, there was a curious little cat named Whiskers. Whiskers had always been fascinated by the forest on the outskirts of the village. One day, determined to uncover its secrets, Whiskers ventured into the woods. As the trees whispered around him, he stumbled upon a hidden glade filled with vibrant flowers and sparkling streams. There, he met a wise old turtle who shared tales of the forest's magic. Whiskers returned to the village with newfound wonder and, from then on, shared the stories with anyone who would listen. And so, the village embraced the enchantment of the forest, with Whiskers leading the charge. 
+
+What did you think of the story?
+User: nice
+Bot: Glad you liked it! What's on your mind today?
+User: story is nice
+Bot: I'm happy you enjoyed it! What's something you love about stories, or do you have a favorite one?
+19:03:23,458 root INFO Response: Awesome! How's everything going on your end?
+19:03:23,616 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:03:23,618 root INFO Logged to Supabase: data=[{'id': 1937, 'user_question': 'ok', 'bot_response': "Awesome! How's everything going on your end?", 'cit': '0', 'drt': '0', 'rgt': '747.75', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:33:23.460427', 'relative_data': ''}] count=None
+19:03:42,182 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:03:42,185 root INFO Question: everything is good
+19:03:42,185 root INFO Last 3 Responses: User: can you tell me astory
+Bot: Sure! Here's a quick story for you: 
+
+Once upon a time in a quiet village, there was a curious little cat named Whiskers. Whiskers had always been fascinated by the forest on the outskirts of the village. One day, determined to uncover its secrets, Whiskers ventured into the woods. As the trees whispered around him, he stumbled upon a hidden glade filled with vibrant flowers and sparkling streams. There, he met a wise old turtle who shared tales of the forest's magic. Whiskers returned to the village with newfound wonder and, from then on, shared the stories with anyone who would listen. And so, the village embraced the enchantment of the forest, with Whiskers leading the charge. 
+
+What did you think of the story?
+User: nice
+Bot: Glad you liked it! What's on your mind today?
+User: story is nice
+Bot: I'm happy you enjoyed it! What's something you love about stories, or do you have a favorite one?
+User: ok
+Bot: Awesome! How's everything going on your end?
+19:03:42,185 root INFO Response: Great to hear! What's been the highlight of your day so far?
+19:03:42,353 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:03:42,354 root INFO Logged to Supabase: data=[{'id': 1938, 'user_question': 'everything is good', 'bot_response': "Great to hear! What's been the highlight of your day so far?", 'cit': '0', 'drt': '0', 'rgt': '851.47', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T13:33:42.192702', 'relative_data': ''}] count=None
+19:32:56,466 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:32:56,469 root INFO Question: Hii
+19:32:56,470 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+19:32:56,470 root INFO Response: Hello, dear! How are you feeling today? 😊
+19:32:56,877 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:32:56,879 root INFO Logged to Supabase: data=[{'id': 1939, 'user_question': 'Hii', 'bot_response': 'Hello, dear! How are you feeling today? 😊', 'cit': '0', 'drt': '0', 'rgt': '1180.41', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T14:02:56.471934', 'relative_data': ''}] count=None
+19:33:51,290 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:33:51,295 root INFO Question: Hello
+19:33:51,295 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+19:33:51,295 root INFO Response: Hello, dear! How are you feeling today? 😊
+19:33:51,493 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+19:33:51,495 root INFO Logged to Supabase: data=[{'id': 1940, 'user_question': 'Hello', 'bot_response': 'Hello, dear! How are you feeling today? 😊', 'cit': '0', 'drt': '0', 'rgt': '862.71', 'personality': 'delhi', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2024-12-31T14:03:51.302325', 'relative_data': ''}] count=None
+20:19:38,766 watchfiles.main INFO 1 change detected
+20:19:39,891 watchfiles.main INFO 3 changes detected
+20:19:41,302 uvicorn.error INFO Shutting down
+20:19:41,407 uvicorn.error INFO Finished server process [82732]
+20:19:41,417 uvicorn.error INFO Stopping reloader process [76734]
