@@ -1450,3 +1450,133 @@ Bot: Awesome! How's everything going on your end?
 20:19:41,302 uvicorn.error INFO Shutting down
 20:19:41,407 uvicorn.error INFO Finished server process [82732]
 20:19:41,417 uvicorn.error INFO Stopping reloader process [76734]
+13:01:43,299 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server']
+13:01:43,300 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+13:01:43,300 uvicorn.error INFO Started reloader process [36435] using WatchFiles
+13:01:44,86 watchfiles.main INFO 15 changes detected
+13:01:44,442 watchfiles.main INFO 31 changes detected
+13:01:44,810 watchfiles.main INFO 98 changes detected
+13:01:44,880 uvicorn.error INFO Started server process [36496]
+13:01:44,882 uvicorn.error INFO Waiting for application startup.
+13:01:44,882 uvicorn.error INFO Application startup complete.
+13:02:32,753 root INFO Question: Hey
+13:02:32,754 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+13:02:32,754 root INFO Response: Hey Tanmay, how are you feeling today, dear? Is there something on your mind that you'd like to talk about? 🌟
+13:02:32,881 watchfiles.main INFO 7 changes detected
+13:02:33,262 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+13:02:33,267 root INFO Logged to Supabase: data=[{'id': 2127, 'user_question': 'Hey', 'bot_response': "Hey Tanmay, how are you feeling today, dear? Is there something on your mind that you'd like to talk about? 🌟", 'cit': '0', 'drt': '0', 'rgt': '2157.97', 'personality': 'delhi_mentor_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2025-01-03T07:32:32.791443', 'relative_data': ''}] count=None
+13:03:08,449 root INFO Question: tell me about the New delhi 
+13:03:08,450 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hey Tanmay, how are you feeling today, dear? Is there something on your mind that you'd like to talk about? 🌟
+13:03:08,450 root INFO Response: Ah, New Delhi, the heart of our vibrant city, Tanmay. It's a tapestry woven with historical landmarks, cultural richness, and modern elegance. Imagine strolling through the majestic Red Fort, its red sandstone walls telling tales of the Mughal Empire, or standing in awe before the Qutub Minar, the tallest brick minaret in the world, a testament to Islamic architecture[1][4].
+
+How about a visit to the Lotus Temple, its 27 marble petals symbolizing the unity of all religions? Or perhaps a walk through the serene Humayun’s Tomb, an inspiration for the Taj Mahal and a masterpiece of Mughal design. And of course, no trip to New Delhi is complete without a stop at India Gate, a war memorial that honors the sacrifices of our soldiers[1].
+
+What draws you to New Delhi, dear? Is it the history, the architecture, or something else entirely? 🌟
+13:03:08,641 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+13:03:08,642 root INFO Logged to Supabase: data=[{'id': 2128, 'user_question': 'tell me about the New delhi ', 'bot_response': "Ah, New Delhi, the heart of our vibrant city, Tanmay. It's a tapestry woven with historical landmarks, cultural richness, and modern elegance. Imagine strolling through the majestic Red Fort, its red sandstone walls telling tales of the Mughal Empire, or standing in awe before the Qutub Minar, the tallest brick minaret in the world, a testament to Islamic architecture[1][4].\n\nHow about a visit to the Lotus Temple, its 27 marble petals symbolizing the unity of all religions? Or perhaps a walk through the serene Humayun’s Tomb, an inspiration for the Taj Mahal and a masterpiece of Mughal design. And of course, no trip to New Delhi is complete without a stop at India Gate, a war memorial that honors the sacrifices of our soldiers[1].\n\nWhat draws you to New Delhi, dear? Is it the history, the architecture, or something else entirely? 🌟", 'cit': '0', 'drt': '0', 'rgt': '4545.64', 'personality': 'delhi_mentor_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2025-01-03T07:33:08.452385', 'relative_data': ''}] count=None
+13:04:34,361 watchfiles.main INFO 1 change detected
+13:04:34,364 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+13:04:34,440 uvicorn.error INFO Shutting down
+13:04:34,544 uvicorn.error INFO Waiting for application shutdown.
+13:04:34,545 uvicorn.error INFO Application shutdown complete.
+13:04:34,546 uvicorn.error INFO Finished server process [36496]
+13:04:34,923 watchfiles.main INFO 1 change detected
+13:04:35,283 watchfiles.main INFO 3 changes detected
+13:04:35,307 uvicorn.error INFO Started server process [36876]
+13:04:35,308 uvicorn.error INFO Waiting for application startup.
+13:04:35,308 uvicorn.error INFO Application startup complete.
+13:04:36,446 watchfiles.main INFO 1 change detected
+13:04:37,74 watchfiles.main INFO 3 changes detected
+13:05:21,926 watchfiles.main INFO 1 change detected
+13:05:21,927 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+13:05:22,4 uvicorn.error INFO Shutting down
+13:05:22,106 uvicorn.error INFO Waiting for application shutdown.
+13:05:22,107 uvicorn.error INFO Application shutdown complete.
+13:05:22,107 uvicorn.error INFO Finished server process [36876]
+13:05:22,476 watchfiles.main INFO 1 change detected
+13:05:22,794 uvicorn.error INFO Started server process [36978]
+13:05:22,795 uvicorn.error INFO Waiting for application startup.
+13:05:22,796 uvicorn.error INFO Application startup complete.
+13:05:22,840 watchfiles.main INFO 3 changes detected
+13:05:25,41 watchfiles.main INFO 1 change detected
+13:05:25,42 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+13:05:25,127 uvicorn.error INFO Shutting down
+13:05:25,230 uvicorn.error INFO Waiting for application shutdown.
+13:05:25,231 uvicorn.error INFO Application shutdown complete.
+13:05:25,231 uvicorn.error INFO Finished server process [36978]
+13:05:25,604 watchfiles.main INFO 1 change detected
+13:05:25,787 uvicorn.error INFO Started server process [36989]
+13:05:25,789 uvicorn.error INFO Waiting for application startup.
+13:05:25,789 uvicorn.error INFO Application startup complete.
+13:05:25,962 watchfiles.main INFO 3 changes detected
+13:07:37,168 watchfiles.main INFO 1 change detected
+13:07:37,824 watchfiles.main INFO 3 changes detected
+13:08:33,237 watchfiles.main INFO 1 change detected
+13:08:33,239 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+13:08:33,251 uvicorn.error INFO Shutting down
+13:08:33,356 uvicorn.error INFO Waiting for application shutdown.
+13:08:33,357 uvicorn.error INFO Application shutdown complete.
+13:08:33,357 uvicorn.error INFO Finished server process [36989]
+13:08:33,732 watchfiles.main INFO 1 change detected
+13:08:34,89 watchfiles.main INFO 3 changes detected
+13:08:34,94 uvicorn.error INFO Started server process [37344]
+13:08:34,96 uvicorn.error INFO Waiting for application startup.
+13:08:34,96 uvicorn.error INFO Application startup complete.
+13:08:35,481 watchfiles.main INFO 1 change detected
+13:08:35,482 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+13:08:35,514 uvicorn.error INFO Shutting down
+13:08:35,616 uvicorn.error INFO Waiting for application shutdown.
+13:08:35,618 uvicorn.error INFO Application shutdown complete.
+13:08:35,619 uvicorn.error INFO Finished server process [37344]
+13:08:35,989 watchfiles.main INFO 1 change detected
+13:08:36,196 uvicorn.error INFO Started server process [37355]
+13:08:36,197 uvicorn.error INFO Waiting for application startup.
+13:08:36,197 uvicorn.error INFO Application startup complete.
+13:08:36,354 watchfiles.main INFO 3 changes detected
+13:08:59,182 root INFO Question: Tell me about the India 
+13:08:59,183 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hey Tanmay, how are you feeling today, dear? Is there something on your mind that you'd like to talk about? 🌟
+User: tell me about the New delhi 
+Bot: Ah, New Delhi, the heart of our vibrant city, Tanmay. It's a tapestry woven with historical landmarks, cultural richness, and modern elegance. Imagine strolling through the majestic Red Fort, its red sandstone walls telling tales of the Mughal Empire, or standing in awe before the Qutub Minar, the tallest brick minaret in the world, a testament to Islamic architecture[1][4].
+
+How about a visit to the Lotus Temple, its 27 marble petals symbolizing the unity of all religions? Or perhaps a walk through the serene Humayun’s Tomb, an inspiration for the Taj Mahal and a masterpiece of Mughal design. And of course, no trip to New Delhi is complete without a stop at India Gate, a war memorial that honors the sacrifices of our soldiers[1].
+
+What draws you to New Delhi, dear? Is it the history, the architecture, or something else entirely? 🌟
+13:08:59,183 root INFO Response: Tanmay, when you mention India, it's like opening a vast and colorful tapestry. From the majestic Qutub Minar in Delhi, a symbol of Islamic architecture and Mughal victory, to the serene backwaters of Kerala, each corner of India tells a unique story.
+
+What aspect of India fascinates you the most? Is it the rich history, the diverse cultures, or perhaps the vibrant landscapes?
+
+And how are you feeling today, dear? 🌟
+13:08:59,633 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+13:08:59,637 root INFO Logged to Supabase: data=[{'id': 2129, 'user_question': 'Tell me about the India ', 'bot_response': "Tanmay, when you mention India, it's like opening a vast and colorful tapestry. From the majestic Qutub Minar in Delhi, a symbol of Islamic architecture and Mughal victory, to the serene backwaters of Kerala, each corner of India tells a unique story.\n\nWhat aspect of India fascinates you the most? Is it the rich history, the diverse cultures, or perhaps the vibrant landscapes?\n\nAnd how are you feeling today, dear? 🌟", 'cit': '0', 'drt': '0', 'rgt': '2978.15', 'personality': 'delhi_mentor_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2025-01-03T07:38:59.192395', 'relative_data': ''}] count=None
+13:09:31,58 root INFO Question: i am good what about you
+13:09:31,59 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hey Tanmay, how are you feeling today, dear? Is there something on your mind that you'd like to talk about? 🌟
+User: tell me about the New delhi 
+Bot: Ah, New Delhi, the heart of our vibrant city, Tanmay. It's a tapestry woven with historical landmarks, cultural richness, and modern elegance. Imagine strolling through the majestic Red Fort, its red sandstone walls telling tales of the Mughal Empire, or standing in awe before the Qutub Minar, the tallest brick minaret in the world, a testament to Islamic architecture[1][4].
+
+How about a visit to the Lotus Temple, its 27 marble petals symbolizing the unity of all religions? Or perhaps a walk through the serene Humayun’s Tomb, an inspiration for the Taj Mahal and a masterpiece of Mughal design. And of course, no trip to New Delhi is complete without a stop at India Gate, a war memorial that honors the sacrifices of our soldiers[1].
+
+What draws you to New Delhi, dear? Is it the history, the architecture, or something else entirely? 🌟
+User: Tell me about the India 
+Bot: Tanmay, when you mention India, it's like opening a vast and colorful tapestry. From the majestic Qutub Minar in Delhi, a symbol of Islamic architecture and Mughal victory, to the serene backwaters of Kerala, each corner of India tells a unique story.
+
+What aspect of India fascinates you the most? Is it the rich history, the diverse cultures, or perhaps the vibrant landscapes?
+
+And how are you feeling today, dear? 🌟
+13:09:31,60 root INFO Response: I'm doing well, Tanmay, thank you for asking. It's always a pleasure to connect with you. How has your week been? Anything new or exciting happening in your life?
+
+And by the way, have you ever had a chance to visit Khan Market? It's one of my favorite spots in Delhi, rich in history and full of life. 🌟
+13:09:31,230 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+13:09:31,231 root INFO Logged to Supabase: data=[{'id': 2130, 'user_question': 'i am good what about you', 'bot_response': "I'm doing well, Tanmay, thank you for asking. It's always a pleasure to connect with you. How has your week been? Anything new or exciting happening in your life?\n\nAnd by the way, have you ever had a chance to visit Khan Market? It's one of my favorite spots in Delhi, rich in history and full of life. 🌟", 'cit': '0', 'drt': '0', 'rgt': '2604.75', 'personality': 'delhi_mentor_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2025-01-03T07:39:31.061663', 'relative_data': ''}] count=None
+13:10:37,938 watchfiles.main INFO 1 change detected
+13:10:38,622 watchfiles.main INFO 3 changes detected
+13:10:42,707 uvicorn.error INFO Shutting down
+13:10:42,809 uvicorn.error INFO Waiting for application shutdown.
+13:10:42,811 uvicorn.error INFO Application shutdown complete.
+13:10:42,812 uvicorn.error INFO Finished server process [37355]
+13:10:42,820 uvicorn.error INFO Stopping reloader process [36435]

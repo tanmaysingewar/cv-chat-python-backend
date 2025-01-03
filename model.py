@@ -52,9 +52,8 @@ def get_response_by_bot(question,personality_prompt,last_three_responses):
         - Dont add translations, like this "Tere liye kya, Delhi?" (what's up for you, Delhi?) 
     ## Last 8 Responses you have given
         {last_three_responses}
-    ## Last 8 Responses you have given
-        {last_three_responses}
-    Instruction on last 3 responses:
+        
+    ## Instruction on last 3 responses:
         - If last three user questions are repetitive dont provider similar responses again, change your next little bit so it should not look repetitive.
         - break the monotonous responses and try having a conversation.
         - If all 3 user queries are same then ask them why are asking same questions again.
