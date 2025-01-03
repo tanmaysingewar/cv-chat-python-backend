@@ -15,7 +15,7 @@ logging.basicConfig(
     level=logging.INFO  # Log level: INFO
 )
 
-def log_to_supabase(supabase,user_question, bot_response, cit=None, drt=None, rgt=None, personality=None, llm=None,relative_info=None):
+def log_to_supabase(supabase,user_question, bot_response, cit=None, drt=None, rgt=None, personality=None, llm=None,relative_info=None,email=None):
     """
     Logs chatbot interaction details to Supabase.
 
@@ -59,7 +59,8 @@ def log_to_supabase(supabase,user_question, bot_response, cit=None, drt=None, rg
             "personality": personality,
             "llm": llm,
             "relative_data" : relative_info,
-            "timestamp": datetime.utcnow().isoformat()  # ISO format for timestamp
+            "timestamp": datetime.utcnow().isoformat(),  # ISO format for timestamp
+            "email": email
         }
 
         # Insert into Supabase

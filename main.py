@@ -76,10 +76,11 @@ class QuestionRequest(BaseModel):
         last_three_responses (str): Contextual history from the last three responses.
     """
     question: Union[str, None] = None  # Question from the user
-    llm: str = "meta-llama/llama-3.1-70b-instruct"  # Default language model
+    llm: str = ""  # Default language model
     personality: str = "delhi"  # Personality type
     personality_prompt: str = ""  # Personality prompt 
     last_three_responses: str = ""  # Context from last three responses
+    email: str = ""  # Email address
 
 # Define the endpoint for chat functionality
 @app.post("/cv/chat")
@@ -144,7 +145,7 @@ async def cv_chat(request: QuestionRequest, background_tasks: BackgroundTasks):
         #     save_to_redis, response_data, redis_client, relative_info, request.personality
         # )
         background_tasks.add_task(
-            log_to_supabase, supabase, request.question, response_data, 0, 0, bot_response["rgt"], request.personality, request.llm, ""
+            log_to_supabase, supabase, request.question, response_data, 0, 0, bot_response["rgt"], request.personality, request.llm, "", request.email
         )
 
         # Return the bot response

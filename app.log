@@ -1580,3 +1580,44 @@ And by the way, have you ever had a chance to visit Khan Market? It's one of my 
 13:10:42,811 uvicorn.error INFO Application shutdown complete.
 13:10:42,812 uvicorn.error INFO Finished server process [37355]
 13:10:42,820 uvicorn.error INFO Stopping reloader process [36435]
+23:07:22,383 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server']
+23:07:22,384 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+23:07:22,384 uvicorn.error INFO Started reloader process [91520] using WatchFiles
+23:07:23,375 uvicorn.error INFO Started server process [91551]
+23:07:23,376 uvicorn.error INFO Waiting for application startup.
+23:07:23,377 uvicorn.error INFO Application startup complete.
+23:10:06,455 root INFO Question: Hey
+23:10:06,455 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+23:10:06,455 root INFO Response: Hello, Tanmay How are you feeling today, dear? Is there something on your mind that you'd like to talk about? 🌟
+23:10:06,900 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:10:06,906 root INFO Logged to Supabase: data=[{'id': 2152, 'user_question': 'Hey', 'bot_response': "Hello, Tanmay How are you feeling today, dear? Is there something on your mind that you'd like to talk about? 🌟", 'cit': '0', 'drt': '0', 'rgt': '2176.3', 'personality': 'delhi_mentor_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2025-01-03T17:40:06.465494', 'relative_data': '', 'email': ''}] count=None
+23:10:55,288 root INFO Question: How are you
+23:10:55,289 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+User: Hey
+Bot: Hello, Tanmay How are you feeling today, dear? Is there something on your mind that you'd like to talk about? 🌟
+23:10:55,290 root INFO Response: I'm doing well, Tanmay, thanks for asking. The winter breeze in Delhi always brings a sense of freshness and reflection. How about you, dear? What's been on your mind lately? 🌟
+23:10:55,459 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:10:55,461 root INFO Logged to Supabase: data=[{'id': 2154, 'user_question': 'How are you', 'bot_response': "I'm doing well, Tanmay, thanks for asking. The winter breeze in Delhi always brings a sense of freshness and reflection. How about you, dear? What's been on your mind lately? 🌟", 'cit': '0', 'drt': '0', 'rgt': '2623.45', 'personality': 'delhi_mentor_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2025-01-03T17:40:55.29473', 'relative_data': '', 'email': ''}] count=None
+23:13:20,993 root INFO Question: Hii
+23:13:20,994 root INFO Last 3 Responses: Bot: Hello, how are you doing today ?
+23:13:20,994 root INFO Response: Hey Tanmay, how's your day going so far? What's been the highlight for you today? 😊
+23:13:21,347 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+23:13:21,351 root INFO Logged to Supabase: data=[{'id': 2155, 'user_question': 'Hii', 'bot_response': "Hey Tanmay, how's your day going so far? What's been the highlight for you today? 😊", 'cit': '0', 'drt': '0', 'rgt': '1962.75', 'personality': 'delhi_friend_male', 'llm': 'meta-llama/llama-3.1-70b-instruct', 'timestamp': '2025-01-03T17:43:20.99697', 'relative_data': '', 'email': 'singewartanmay@gmail.com'}] count=None
+23:13:38,908 watchfiles.main INFO 1 change detected
+23:13:39,541 watchfiles.main INFO 3 changes detected
+23:14:45,321 watchfiles.main INFO 1 change detected
+23:14:45,323 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+23:14:45,397 uvicorn.error INFO Shutting down
+23:14:45,499 uvicorn.error INFO Waiting for application shutdown.
+23:14:45,501 uvicorn.error INFO Application shutdown complete.
+23:14:45,502 uvicorn.error INFO Finished server process [91551]
+23:14:45,872 watchfiles.main INFO 1 change detected
+23:14:46,237 watchfiles.main INFO 3 changes detected
+23:14:46,265 uvicorn.error INFO Started server process [92471]
+23:14:46,266 uvicorn.error INFO Waiting for application startup.
+23:14:46,266 uvicorn.error INFO Application startup complete.
+23:14:49,301 uvicorn.error INFO Shutting down
+23:14:49,404 uvicorn.error INFO Waiting for application shutdown.
+23:14:49,407 uvicorn.error INFO Application shutdown complete.
+23:14:49,408 uvicorn.error INFO Finished server process [92471]
+23:14:49,415 uvicorn.error INFO Stopping reloader process [91520]
