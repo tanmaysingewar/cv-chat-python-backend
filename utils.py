@@ -40,8 +40,6 @@ def call_groq_api(prompt,model="gpt-4o"):
         api_key= os.getenv("OPENAI_API_KEY"),
     )
 
-    print(os.getenv("OPENAI_API_KEY"))
-
     # Selecting the default model
     # model = "meta-llama/llama-3.1-70b-instruct"
     model="gpt-4o"

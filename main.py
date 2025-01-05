@@ -25,6 +25,8 @@ from post_processing import get_key_value_pairs
 from post_processing import save_to_redis
 from post_processing import log_to_supabase
 
+from mem0 import MemoryClient
+
 # Initialize FastAPI application
 app = FastAPI()
 
@@ -50,6 +52,8 @@ redis_client = redis.Redis(
 SUPABASE_URL = os.getenv("SUPABASE_URL")  # Supabase project URL from environment variable
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")  # Supabase API key from environment variable
 
+MEM0_API_KEY = os.getenv("MEM0_API_KEY")
+
 # Configure logging for the application
 import logging
 logging.basicConfig(
@@ -62,6 +66,8 @@ logging.basicConfig(
 
 # Create a Supabase client using project URL and API key
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+client_mem = MemoryClient(api_key=MEM0_API_KEY)
 
 # Define a Pydantic model for the incoming request body
 class QuestionRequest(BaseModel):
@@ -125,7 +131,7 @@ async def cv_chat(request: QuestionRequest, background_tasks: BackgroundTasks):
 
         # Generate bot response using the provided information and language model
         bot_response = get_response_by_bot(
-            request.question,request.personality_prompt, request.last_three_responses
+            request.question,request.personality_prompt, request.last_three_responses, ""
         )
 
         # Ensure bot response is in the correct format (dictionary with a "response" key)
@@ -155,3 +161,49 @@ async def cv_chat(request: QuestionRequest, background_tasks: BackgroundTasks):
     except Exception as e:
         logging.info(f"Error: {e}")  # Log the error for debugging
         return {"error": str("Error occurred while generating the quiz and summary")}  # Return error message
+
+
+@app.post("/cv/v2/chat")
+async def cv_chat_v2(request: QuestionRequest, background_tasks: BackgroundTasks):
+    if not request.question or request.question.strip() == "" or request.email == "":
+            return {"error": str("Please provide a question and email")}  # Return error if invalid
+     
+    # Search for memories
+    relative_info = client_mem.search(request.question, user_id=request.email)
+    
+    # If no memories found, return an error message
+    if relative_info == None or relative_info == []:
+        relative_info = ""
+    else:
+        # Combine all memories from the search results
+        relative_info = ", ".join([item["memory"] for item in relative_info])
+
+    # Generate bot response using the provided information and language model
+    bot_response = get_response_by_bot(
+            request.question,request.personality_prompt, request.last_three_responses,relative_info
+        )
+    
+    # Ensure bot response is in the correct format (dictionary with a "response" key)
+    if isinstance(bot_response, dict) and "response" in bot_response:
+        response_data = bot_response["response"]
+    else:
+        return {"error": "Bot response format is invalid"}  # Return error if invalid
+    
+    messages = [
+        {"role": "user", "content": request.question},
+        {"role": "assistant", "content": response_data},
+    ]
+
+    # Add the bot response to the memory
+    background_tasks.add_task(
+        client_mem.add, messages, user_id=request.email
+    )
+
+    relative_info = f"mem0 - {relative_info}"
+
+    # Log the input question, relative info, and bot response
+    background_tasks.add_task(
+            log_to_supabase, supabase, request.question, response_data, 0, 0, bot_response["rgt"], request.personality, request.llm, relative_info, request.email
+        )
+    
+    return bot_response

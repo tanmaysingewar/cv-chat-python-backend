@@ -1621,3 +1621,416 @@ Bot: Hello, Tanmay How are you feeling today, dear? Is there something on your m
 23:14:49,407 uvicorn.error INFO Application shutdown complete.
 23:14:49,408 uvicorn.error INFO Finished server process [92471]
 23:14:49,415 uvicorn.error INFO Stopping reloader process [91520]
+21:45:23,645 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:45:23,665 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server']
+21:45:23,666 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+21:45:23,666 uvicorn.error INFO Started reloader process [17553] using WatchFiles
+21:45:24,457 watchfiles.main INFO 15 changes detected
+21:45:24,823 watchfiles.main INFO 31 changes detected
+21:45:25,189 watchfiles.main INFO 98 changes detected
+21:45:26,869 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:45:26,892 uvicorn.error INFO Started server process [17595]
+21:45:26,896 uvicorn.error INFO Waiting for application startup.
+21:45:26,897 uvicorn.error INFO Application startup complete.
+21:47:28,165 watchfiles.main INFO 1 change detected
+21:47:28,167 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+21:47:28,191 uvicorn.error INFO Shutting down
+21:47:28,293 uvicorn.error INFO Waiting for application shutdown.
+21:47:28,295 uvicorn.error INFO Application shutdown complete.
+21:47:28,296 uvicorn.error INFO Finished server process [17595]
+21:47:28,671 watchfiles.main INFO 1 change detected
+21:47:29,29 watchfiles.main INFO 3 changes detected
+21:47:30,617 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:47:30,632 uvicorn.error INFO Started server process [17774]
+21:47:30,635 uvicorn.error INFO Waiting for application startup.
+21:47:30,635 uvicorn.error INFO Application startup complete.
+21:47:33,398 watchfiles.main INFO 1 change detected
+21:47:33,399 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+21:47:33,466 uvicorn.error INFO Shutting down
+21:47:33,569 uvicorn.error INFO Waiting for application shutdown.
+21:47:33,570 uvicorn.error INFO Application shutdown complete.
+21:47:33,571 uvicorn.error INFO Finished server process [17774]
+21:47:34,18 watchfiles.main INFO 4 changes detected
+21:47:35,709 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:47:35,724 uvicorn.error INFO Started server process [17798]
+21:47:35,728 uvicorn.error INFO Waiting for application startup.
+21:47:35,729 uvicorn.error INFO Application startup complete.
+21:47:36,517 watchfiles.main INFO 1 change detected
+21:47:36,518 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+21:47:36,538 uvicorn.error INFO Shutting down
+21:47:36,640 uvicorn.error INFO Waiting for application shutdown.
+21:47:36,641 uvicorn.error INFO Application shutdown complete.
+21:47:36,643 uvicorn.error INFO Finished server process [17798]
+21:47:37,65 watchfiles.main INFO 4 changes detected
+21:47:38,775 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:47:38,793 uvicorn.error INFO Started server process [17809]
+21:47:38,798 uvicorn.error INFO Waiting for application startup.
+21:47:38,799 uvicorn.error INFO Application startup complete.
+21:47:46,399 watchfiles.main INFO 1 change detected
+21:47:46,399 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+21:47:46,480 uvicorn.error INFO Shutting down
+21:47:46,581 uvicorn.error INFO Waiting for application shutdown.
+21:47:46,581 uvicorn.error INFO Application shutdown complete.
+21:47:46,582 uvicorn.error INFO Finished server process [17809]
+21:47:47,8 watchfiles.main INFO 4 changes detected
+21:47:48,709 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:47:48,729 uvicorn.error INFO Started server process [17830]
+21:47:48,734 uvicorn.error INFO Waiting for application startup.
+21:47:48,734 uvicorn.error INFO Application startup complete.
+21:47:55,379 watchfiles.main INFO 1 change detected
+21:47:56,54 watchfiles.main INFO 3 changes detected
+21:50:59,408 watchfiles.main INFO 1 change detected
+21:50:59,987 watchfiles.main INFO 3 changes detected
+21:51:10,151 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 400 Bad Request"
+21:51:10,153 mem0.client.main ERROR HTTP error occurred: Client error '400 Bad Request' for url 'https://api.mem0.ai/v1/memories/search/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+21:51:10,156 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/mem0/client/main.py", line 30, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/mem0/client/main.py", line 205, in search
+    response.raise_for_status()
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.mem0.ai/v1/memories/search/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/main.py", line 171, in cv_chat_v2
+    relative_info= client_mem.search(request.question, user_id=request.email)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server/.venv/lib/python3.12/site-packages/mem0/client/main.py", line 33, in wrapper
+    raise APIError(f"API request failed: {e.response.text}")
+mem0.client.main.APIError: API request failed: {"error":"At least one of the filters: agent_id, user_id, app_id, run_id is required!"}
+21:51:59,86 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+21:52:00,393 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:52:00,535 watchfiles.main INFO 7 changes detected
+21:52:01,693 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+21:52:02,96 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+21:52:02,111 root INFO Logged to Supabase: data=[{'id': 2317, 'user_question': 'What do your father do?', 'bot_response': "My role is to provide information and assistance, so I don't have a personal family or father. However, I'm here to help answer any other questions you might have! Is there anything else you'd like to know?", 'cit': '0', 'drt': '0', 'rgt': '1314.79', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:22:01.696026', 'relative_data': '', 'email': 't@g.com'}] count=None
+21:52:50,620 watchfiles.main INFO 1 change detected
+21:52:50,623 uvicorn.error WARNING WatchFiles detected changes in 'utils.py'. Reloading...
+21:52:50,675 uvicorn.error INFO Shutting down
+21:52:50,777 uvicorn.error INFO Waiting for application shutdown.
+21:52:50,779 uvicorn.error INFO Application shutdown complete.
+21:52:50,779 uvicorn.error INFO Finished server process [17830]
+21:52:51,159 watchfiles.main INFO 1 change detected
+21:52:51,524 watchfiles.main INFO 3 changes detected
+21:52:53,176 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:52:53,198 uvicorn.error INFO Started server process [18608]
+21:52:53,203 uvicorn.error INFO Waiting for application startup.
+21:52:53,203 uvicorn.error INFO Application startup complete.
+21:53:12,563 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+21:53:13,448 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:53:14,779 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+21:53:14,954 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+21:53:14,960 root INFO Logged to Supabase: data=[{'id': 2318, 'user_question': 'What do your father do?', 'bot_response': "I'm an AI, so I don't have a father. Is there anything else you’d like to know or talk about?", 'cit': '0', 'drt': '0', 'rgt': '896.0', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:23:14.781139', 'relative_data': '', 'email': 't@g.com'}] count=None
+21:53:30,993 watchfiles.main INFO 1 change detected
+21:53:30,993 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+21:53:31,55 uvicorn.error INFO Shutting down
+21:53:31,157 uvicorn.error INFO Waiting for application shutdown.
+21:53:31,158 uvicorn.error INFO Application shutdown complete.
+21:53:31,159 uvicorn.error INFO Finished server process [18608]
+21:53:31,531 watchfiles.main INFO 1 change detected
+21:53:31,896 watchfiles.main INFO 3 changes detected
+21:53:33,516 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:53:33,540 uvicorn.error INFO Started server process [18704]
+21:53:33,544 uvicorn.error INFO Waiting for application startup.
+21:53:33,545 uvicorn.error INFO Application startup complete.
+21:53:33,883 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+21:53:34,999 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:53:36,217 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+21:53:36,389 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+21:53:36,396 root INFO Logged to Supabase: data=[{'id': 2319, 'user_question': 'What do your father do?', 'bot_response': "I'm here to help with information and answer questions, but I don't have personal experiences or a family, so I don't have a father in the traditional sense. However, feel free to ask any other questions you might have, and I'll do my best to assist!", 'cit': '0', 'drt': '0', 'rgt': '1122.87', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:23:36.219713', 'relative_data': '', 'email': 't@g.com'}] count=None
+21:54:02,817 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+21:54:03,676 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:54:05,523 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+21:54:05,845 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+21:54:05,855 root INFO Logged to Supabase: data=[{'id': 2320, 'user_question': 'I like Video games!', 'bot_response': "That's awesome! Video games can be a great way to unwind and have fun. Do you have any favorite games or genres you're into?", 'cit': '0', 'drt': '0', 'rgt': '859.01', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:24:05.524888', 'relative_data': '', 'email': 't@g.com'}] count=None
+21:54:08,773 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+21:54:09,690 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:54:11,417 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+21:54:11,470 watchfiles.main INFO 1 change detected
+21:54:11,539 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+21:54:11,539 root INFO Logged to Supabase: data=[{'id': 2321, 'user_question': 'I like Video games!', 'bot_response': "That's awesome! Video games can be a lot of fun and a great way to unwind. Do you have a favorite game or genre that you enjoy playing the most?", 'cit': '0', 'drt': '0', 'rgt': '919.68', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:24:11.418489', 'relative_data': '', 'email': 't@g.com'}] count=None
+21:54:12,56 watchfiles.main INFO 3 changes detected
+21:54:37,647 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+21:54:38,879 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:54:41,747 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+21:54:41,888 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+21:54:41,890 root INFO Logged to Supabase: data=[{'id': 2322, 'user_question': 'Recent game I am playing is Days Gone', 'bot_response': "Days Gone is an exciting game! It's a post-apocalyptic action-adventure game where you play as Deacon St. John, navigating through a world filled with Freakers and hostile humans. What aspects of the game have you been enjoying the most? Is it the storyline, the open-world environment, the combat, or possibly the bike mechanics?", 'cit': '0', 'drt': '0', 'rgt': '1231.46', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:24:41.748849', 'relative_data': '', 'email': 't@g.com'}] count=None
+21:56:13,431 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+21:56:14,595 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:56:17,438 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+21:56:17,765 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+21:56:17,767 root INFO Logged to Supabase: data=[{'id': 2323, 'user_question': 'You remember what game I like the most', 'bot_response': 'Based on the recent conversations we\'ve had, it seems like "Days Gone" is the game you\'re currently enjoying a lot. Is there something specific you like about it, or anything you\'d like to discuss about the game? It\'s always fun to chat about gaming experiences!', 'cit': '0', 'drt': '0', 'rgt': '1165.34', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:26:17.440093', 'relative_data': '', 'email': 't@g.com'}] count=None
+21:57:12,129 watchfiles.main INFO 1 change detected
+21:57:12,706 watchfiles.main INFO 3 changes detected
+21:57:56,853 watchfiles.main INFO 1 change detected
+21:57:56,854 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+21:57:56,917 uvicorn.error INFO Shutting down
+21:57:57,19 uvicorn.error INFO Waiting for application shutdown.
+21:57:57,20 uvicorn.error INFO Application shutdown complete.
+21:57:57,20 uvicorn.error INFO Finished server process [18704]
+21:57:57,397 watchfiles.main INFO 1 change detected
+21:57:57,818 watchfiles.main INFO 3 changes detected
+21:57:59,336 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:57:59,352 uvicorn.error INFO Started server process [19192]
+21:57:59,355 uvicorn.error INFO Waiting for application startup.
+21:57:59,355 uvicorn.error INFO Application startup complete.
+21:58:25,41 watchfiles.main INFO 1 change detected
+21:58:25,43 uvicorn.error WARNING WatchFiles detected changes in 'model.py'. Reloading...
+21:58:25,129 uvicorn.error INFO Shutting down
+21:58:25,232 uvicorn.error INFO Waiting for application shutdown.
+21:58:25,232 uvicorn.error INFO Application shutdown complete.
+21:58:25,233 uvicorn.error INFO Finished server process [19192]
+21:58:25,601 watchfiles.main INFO 1 change detected
+21:58:25,962 watchfiles.main INFO 3 changes detected
+21:58:27,338 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:58:27,359 uvicorn.error INFO Started server process [19251]
+21:58:27,364 uvicorn.error INFO Waiting for application startup.
+21:58:27,365 uvicorn.error INFO Application startup complete.
+21:58:43,675 watchfiles.main INFO 1 change detected
+21:58:43,676 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+21:58:43,741 uvicorn.error INFO Shutting down
+21:58:43,844 uvicorn.error INFO Waiting for application shutdown.
+21:58:43,846 uvicorn.error INFO Application shutdown complete.
+21:58:43,847 uvicorn.error INFO Finished server process [19251]
+21:58:44,280 watchfiles.main INFO 4 changes detected
+21:58:46,29 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:58:46,52 uvicorn.error INFO Started server process [19291]
+21:58:46,57 uvicorn.error INFO Waiting for application startup.
+21:58:46,58 uvicorn.error INFO Application startup complete.
+21:58:57,542 watchfiles.main INFO 1 change detected
+21:58:57,543 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+21:58:57,578 uvicorn.error INFO Shutting down
+21:58:57,680 uvicorn.error INFO Waiting for application shutdown.
+21:58:57,681 uvicorn.error INFO Application shutdown complete.
+21:58:57,681 uvicorn.error INFO Finished server process [19291]
+21:58:58,112 watchfiles.main INFO 4 changes detected
+21:58:59,850 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+21:58:59,864 uvicorn.error INFO Started server process [19325]
+21:58:59,868 uvicorn.error INFO Waiting for application startup.
+21:58:59,869 uvicorn.error INFO Application startup complete.
+21:59:06,278 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+21:59:07,471 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:59:09,840 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+21:59:10,230 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+21:59:10,238 root INFO Logged to Supabase: data=[{'id': 2324, 'user_question': 'Recent game I am playing is Days Gone', 'bot_response': 'Days Gone is a captivating game with its open-world setting and intriguing storyline. How are you finding it so far? Do you enjoy the challenges it presents, like dealing with hordes or exploring the vast landscapes?', 'cit': '0', 'drt': '0', 'rgt': '1199.65', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:29:09.841204', 'relative_data': '', 'email': 't@g.com'}] count=None
+22:01:20,100 watchfiles.main INFO 1 change detected
+22:01:20,621 watchfiles.main INFO 3 changes detected
+22:06:07,555 watchfiles.main INFO 1 change detected
+22:06:08,131 watchfiles.main INFO 3 changes detected
+22:11:31,638 watchfiles.main INFO 1 change detected
+22:11:32,278 watchfiles.main INFO 3 changes detected
+22:15:29,189 watchfiles.main INFO 1 change detected
+22:15:29,814 watchfiles.main INFO 3 changes detected
+22:15:35,428 watchfiles.main INFO 1 change detected
+22:15:35,429 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:15:35,435 uvicorn.error INFO Shutting down
+22:15:35,537 uvicorn.error INFO Waiting for application shutdown.
+22:15:35,538 uvicorn.error INFO Application shutdown complete.
+22:15:35,539 uvicorn.error INFO Finished server process [19325]
+22:15:35,912 watchfiles.main INFO 1 change detected
+22:15:36,274 watchfiles.main INFO 3 changes detected
+22:15:37,990 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:15:38,13 uvicorn.error INFO Started server process [21061]
+22:15:38,18 uvicorn.error INFO Waiting for application startup.
+22:15:38,19 uvicorn.error INFO Application startup complete.
+22:16:06,589 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+22:16:07,969 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+22:16:10,651 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+22:16:11,167 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:16:11,170 root INFO Logged to Supabase: data=[{'id': 2325, 'user_question': 'I just told you sbout a game', 'bot_response': "Ah, you're talking about Days Gone! It's awesome that it's your favorite game. What do you love most about it? Is it the open-world exploration or maybe the intense combat with the Freakers?", 'cit': '0', 'drt': '0', 'rgt': '1385.74', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:46:10.65303', 'relative_data': '', 'email': 't@g.com'}] count=None
+22:16:36,950 watchfiles.main INFO 1 change detected
+22:16:36,950 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:16:37,8 uvicorn.error INFO Shutting down
+22:16:37,110 uvicorn.error INFO Waiting for application shutdown.
+22:16:37,112 uvicorn.error INFO Application shutdown complete.
+22:16:37,113 uvicorn.error INFO Finished server process [21061]
+22:16:37,483 watchfiles.main INFO 1 change detected
+22:16:37,844 watchfiles.main INFO 3 changes detected
+22:16:39,551 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:16:39,573 uvicorn.error INFO Started server process [21205]
+22:16:39,577 uvicorn.error INFO Waiting for application startup.
+22:16:39,578 uvicorn.error INFO Application startup complete.
+22:16:39,923 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+22:16:41,83 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+22:16:42,578 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+22:16:42,759 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:16:42,769 root INFO Logged to Supabase: data=[{'id': 2326, 'user_question': 'I just told you sbout a game', 'bot_response': "It sounds like you're really into Days Gone, which is awesome! It's a fantastic game with an intense storyline and open-world gameplay. What aspects of it do you enjoy the most? The action, the story, or maybe the thrill of surviving in a post-apocalyptic world? Let's chat about it!", 'cit': '0', 'drt': '0', 'rgt': '1165.79', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:46:42.58065', 'relative_data': '', 'email': 't@g.com'}] count=None
+22:18:08,131 watchfiles.main INFO 1 change detected
+22:18:08,132 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:18:08,141 uvicorn.error INFO Shutting down
+22:18:08,243 uvicorn.error INFO Waiting for application shutdown.
+22:18:08,246 uvicorn.error INFO Application shutdown complete.
+22:18:08,247 uvicorn.error INFO Finished server process [21205]
+22:18:08,625 watchfiles.main INFO 1 change detected
+22:18:08,990 watchfiles.main INFO 3 changes detected
+22:18:10,656 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:18:10,678 uvicorn.error INFO Started server process [21431]
+22:18:10,690 uvicorn.error INFO Waiting for application startup.
+22:18:10,697 uvicorn.error INFO Application startup complete.
+22:18:12,29 watchfiles.main INFO 1 change detected
+22:18:12,29 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:18:12,114 uvicorn.error INFO Shutting down
+22:18:12,217 uvicorn.error INFO Waiting for application shutdown.
+22:18:12,218 uvicorn.error INFO Application shutdown complete.
+22:18:12,218 uvicorn.error INFO Finished server process [21431]
+22:18:12,645 watchfiles.main INFO 4 changes detected
+22:18:14,339 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:18:14,355 uvicorn.error INFO Started server process [21448]
+22:18:14,358 uvicorn.error INFO Waiting for application startup.
+22:18:14,358 uvicorn.error INFO Application startup complete.
+22:18:17,861 watchfiles.main INFO 1 change detected
+22:18:17,862 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:18:17,893 uvicorn.error INFO Shutting down
+22:18:17,994 uvicorn.error INFO Waiting for application shutdown.
+22:18:17,995 uvicorn.error INFO Application shutdown complete.
+22:18:17,995 uvicorn.error INFO Finished server process [21448]
+22:18:18,420 watchfiles.main INFO 4 changes detected
+22:18:20,126 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:18:20,143 uvicorn.error INFO Started server process [21470]
+22:18:20,147 uvicorn.error INFO Waiting for application startup.
+22:18:20,148 uvicorn.error INFO Application startup complete.
+22:18:22,587 watchfiles.main INFO 1 change detected
+22:18:22,587 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:18:22,675 uvicorn.error INFO Shutting down
+22:18:22,777 uvicorn.error INFO Waiting for application shutdown.
+22:18:22,778 uvicorn.error INFO Application shutdown complete.
+22:18:22,779 uvicorn.error INFO Finished server process [21470]
+22:18:23,198 watchfiles.main INFO 4 changes detected
+22:18:24,892 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:18:24,914 uvicorn.error INFO Started server process [21494]
+22:18:24,918 uvicorn.error INFO Waiting for application startup.
+22:18:24,919 uvicorn.error INFO Application startup complete.
+22:18:29,876 watchfiles.main INFO 1 change detected
+22:18:30,455 watchfiles.main INFO 3 changes detected
+22:18:32,4 watchfiles.main INFO 1 change detected
+22:18:32,4 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:18:32,88 uvicorn.error INFO Shutting down
+22:18:32,190 uvicorn.error INFO Waiting for application shutdown.
+22:18:32,192 uvicorn.error INFO Application shutdown complete.
+22:18:32,193 uvicorn.error INFO Finished server process [21494]
+22:18:32,624 watchfiles.main INFO 4 changes detected
+22:18:34,340 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:18:34,355 uvicorn.error INFO Started server process [21533]
+22:18:34,358 uvicorn.error INFO Waiting for application startup.
+22:18:34,359 uvicorn.error INFO Application startup complete.
+22:18:38,251 watchfiles.main INFO 1 change detected
+22:18:38,253 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:18:38,296 uvicorn.error INFO Shutting down
+22:18:38,398 uvicorn.error INFO Waiting for application shutdown.
+22:18:38,399 uvicorn.error INFO Application shutdown complete.
+22:18:38,400 uvicorn.error INFO Finished server process [21533]
+22:18:38,827 watchfiles.main INFO 4 changes detected
+22:18:40,521 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:18:40,539 uvicorn.error INFO Started server process [21552]
+22:18:40,543 uvicorn.error INFO Waiting for application startup.
+22:18:40,544 uvicorn.error INFO Application startup complete.
+22:18:42,90 watchfiles.main INFO 1 change detected
+22:18:42,92 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:18:42,163 uvicorn.error INFO Shutting down
+22:18:42,265 uvicorn.error INFO Waiting for application shutdown.
+22:18:42,267 uvicorn.error INFO Application shutdown complete.
+22:18:42,268 uvicorn.error INFO Finished server process [21552]
+22:18:42,695 watchfiles.main INFO 4 changes detected
+22:18:44,473 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:18:44,490 uvicorn.error INFO Started server process [21563]
+22:18:44,494 uvicorn.error INFO Waiting for application startup.
+22:18:44,495 uvicorn.error INFO Application startup complete.
+22:18:48,347 watchfiles.main INFO 1 change detected
+22:18:48,348 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:18:48,436 uvicorn.error INFO Shutting down
+22:18:48,539 uvicorn.error INFO Waiting for application shutdown.
+22:18:48,540 uvicorn.error INFO Application shutdown complete.
+22:18:48,541 uvicorn.error INFO Finished server process [21563]
+22:18:48,966 watchfiles.main INFO 4 changes detected
+22:18:50,671 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:18:50,693 uvicorn.error INFO Started server process [21582]
+22:18:50,697 uvicorn.error INFO Waiting for application startup.
+22:18:50,698 uvicorn.error INFO Application startup complete.
+22:19:15,110 watchfiles.main INFO 1 change detected
+22:19:15,111 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:19:15,159 uvicorn.error INFO Shutting down
+22:19:15,261 uvicorn.error INFO Waiting for application shutdown.
+22:19:15,262 uvicorn.error INFO Application shutdown complete.
+22:19:15,263 uvicorn.error INFO Finished server process [21582]
+22:19:15,690 watchfiles.main INFO 4 changes detected
+22:19:16,628 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:19:16,648 uvicorn.error INFO Started server process [21641]
+22:19:16,652 uvicorn.error INFO Waiting for application startup.
+22:19:16,652 uvicorn.error INFO Application startup complete.
+22:20:17,968 watchfiles.main INFO 1 change detected
+22:20:17,968 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+22:20:18,22 uvicorn.error INFO Shutting down
+22:20:18,123 uvicorn.error INFO Waiting for application shutdown.
+22:20:18,124 uvicorn.error INFO Application shutdown complete.
+22:20:18,125 uvicorn.error INFO Finished server process [21641]
+22:20:18,552 watchfiles.main INFO 4 changes detected
+22:20:20,249 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+22:20:20,267 uvicorn.error INFO Started server process [21753]
+22:20:20,272 uvicorn.error INFO Waiting for application startup.
+22:20:20,272 uvicorn.error INFO Application startup complete.
+22:22:22,848 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+22:22:23,903 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+22:22:26,566 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+22:22:27,60 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+22:22:27,70 root INFO Logged to Supabase: data=[{'id': 2327, 'user_question': 'I just told you sbout a game', 'bot_response': "It sounds like you're talking about Days Gone, which you recently played and also happens to be your favorite game. That's awesome! I really like the open-world aspect and the intense storytelling of that game. What's your favorite part about it?", 'cit': '0', 'drt': '0', 'rgt': '1062.64', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-05T16:52:26.568387', 'relative_data': "mem0 - Recent game being played is Days Gone, User's favorite game is Days Gone, Likes video games", 'email': 't@g.com'}] count=None
+22:22:33,900 watchfiles.main INFO 1 change detected
+22:22:34,480 watchfiles.main INFO 3 changes detected
+22:25:34,616 watchfiles.main INFO 1 change detected
+22:25:35,244 watchfiles.main INFO 3 changes detected
+22:34:06,249 watchfiles.main INFO 1 change detected
+22:34:06,877 watchfiles.main INFO 3 changes detected
+22:34:10,477 uvicorn.error INFO Shutting down
+22:34:10,586 uvicorn.error INFO Waiting for application shutdown.
+22:34:10,589 uvicorn.error INFO Application shutdown complete.
+22:34:10,590 uvicorn.error INFO Finished server process [21753]
+22:34:10,607 uvicorn.error INFO Stopping reloader process [17553]

@@ -4,8 +4,8 @@ import asyncio
 from utils import call_groq_api
 
 
-#  request.question, relative_info, cit, drt, request.llm, request.personality_prompt, request.last_three_responses
-def get_response_by_bot(question,personality_prompt,last_three_responses):
+#  request.question, relative_info, cit, drt, request.llm, request.personality_prompt, request.last_eight_responses
+def get_response_by_bot(question,personality_prompt,last_eight_responses,relative_info):
     """
         Generates a chatbot response based on user input, contextual information, and personality.
 
@@ -16,7 +16,7 @@ def get_response_by_bot(question,personality_prompt,last_three_responses):
             drt (float): Data retrieval time in milliseconds.
             model (str): Language model used to generate the response.
             personality_prompt (str): Personality-specific instructions for the bot.
-            last_three_responses (str): Context of the last three responses for continuity.
+            last_eight_responses (str): Context of the last three responses for continuity.
 
         Returns:
             dict: A dictionary containing the bot's response, citation, data retrieval time (drt),
@@ -30,7 +30,7 @@ def get_response_by_bot(question,personality_prompt,last_three_responses):
                 drt = 556.45
                 model = "meta-llama/llama-3.1-70b-instruct"
                 personality_prompt = "Energetic and concise, like a true Delhiite!"
-                last_three_responses = "Answered questions about Indian geography."
+                last_eight_responses = "User : question 1 \nBot : answer 1 \n User : question 2 \n Bot : answer 2 \n User : question 3 \n Bot : answer 3 \n"
 
             Output:
                 {
@@ -44,14 +44,15 @@ def get_response_by_bot(question,personality_prompt,last_three_responses):
     start_rgt = time.time()
 
     # Prepare the bot prompt
-    bot_prompt ="""
+    bot_prompt =F"""
     ## Instruction
         {personality_prompt}
-        NOTE: If there’s any relevant info about you, I’ll weave it into the chat naturally, so it feels personalized. But if it’s not available or doesn’t quite match the conversation, I’ll focus on the here and now, keeping the energy high and the talk flowing. No need to bring it up unless it’s useful, we’re just vibing!
-        Response should not be long, keep it small and to the point. If you need to elaborate, do that, but don’t overdo it.
-        - Dont add translations, like this "Tere liye kya, Delhi?" (what's up for you, Delhi?) 
-    ## Last 8 Responses you have given
-        {last_three_responses}
+
+    ## Relative info about the question asked by the user
+        {relative_info}
+        
+    ## Last 8 Conversations history
+        {last_eight_responses}
 
     ## Instruction on last 3 responses:
         - If last three user questions are repetitive dont provider similar responses again, change your next little bit so it should not look repetitive.
@@ -60,7 +61,7 @@ def get_response_by_bot(question,personality_prompt,last_three_responses):
 
     ## User Question
     Answer the user question:{question}
-    """ .replace("{question}", question).replace("{personality_prompt}",personality_prompt).replace("{last_three_responses}",last_three_responses)
+    """
 
     # Call the API to get the response
     bot_prompt_response = call_groq_api(bot_prompt)
