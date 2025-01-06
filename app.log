@@ -2034,3 +2034,71 @@ mem0.client.main.APIError: API request failed: {"error":"At least one of the fil
 22:34:10,589 uvicorn.error INFO Application shutdown complete.
 22:34:10,590 uvicorn.error INFO Finished server process [21753]
 22:34:10,607 uvicorn.error INFO Stopping reloader process [17553]
+12:26:18,825 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+12:26:18,849 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server']
+12:26:18,850 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+12:26:18,851 uvicorn.error INFO Started reloader process [87143] using WatchFiles
+12:26:21,196 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+12:26:21,216 uvicorn.error INFO Started server process [87159]
+12:26:21,221 uvicorn.error INFO Waiting for application startup.
+12:26:21,222 uvicorn.error INFO Application startup complete.
+12:26:25,881 watchfiles.main INFO 1 change detected
+12:26:25,882 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+12:26:25,977 uvicorn.error INFO Shutting down
+12:26:26,80 uvicorn.error INFO Waiting for application shutdown.
+12:26:26,81 uvicorn.error INFO Application shutdown complete.
+12:26:26,81 uvicorn.error INFO Finished server process [87159]
+12:26:26,511 watchfiles.main INFO 4 changes detected
+12:26:28,280 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+12:26:28,304 uvicorn.error INFO Started server process [87179]
+12:26:28,308 uvicorn.error INFO Waiting for application startup.
+12:26:28,309 uvicorn.error INFO Application startup complete.
+12:26:38,556 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+12:26:39,721 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:26:41,459 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+12:26:42,96 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+12:26:42,106 root INFO Logged to Supabase: data=[{'id': 2379, 'user_question': 'I just told you sbout a game', 'bot_response': "I'm sorry, I don't have the details about the game you mentioned. Could you please tell me more about it, or let me know what specific information or help you need regarding the game?", 'cit': '0', 'drt': '0', 'rgt': '1170.27', 'personality': 'delhi', 'llm': '', 'timestamp': '2025-01-06T06:56:41.46033', 'relative_data': 'mem0 - ', 'email': 't@g.com'}] count=None
+12:27:28,714 watchfiles.main INFO 1 change detected
+12:27:28,715 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+12:27:28,769 uvicorn.error INFO Shutting down
+12:27:28,871 uvicorn.error INFO Waiting for application shutdown.
+12:27:28,872 uvicorn.error INFO Application shutdown complete.
+12:27:28,872 uvicorn.error INFO Finished server process [87179]
+12:27:29,249 watchfiles.main INFO 1 change detected
+12:27:29,610 watchfiles.main INFO 3 changes detected
+12:27:31,394 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+12:27:31,414 uvicorn.error INFO Started server process [87289]
+12:27:31,419 uvicorn.error INFO Waiting for application startup.
+12:27:31,420 uvicorn.error INFO Application startup complete.
+12:27:52,934 watchfiles.main INFO 1 change detected
+12:27:52,935 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+12:27:52,954 uvicorn.error INFO Shutting down
+12:27:53,57 uvicorn.error INFO Waiting for application shutdown.
+12:27:53,58 uvicorn.error INFO Application shutdown complete.
+12:27:53,58 uvicorn.error INFO Finished server process [87289]
+12:27:53,488 watchfiles.main INFO 4 changes detected
+12:27:55,270 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+12:27:55,286 uvicorn.error INFO Started server process [87330]
+12:27:55,289 uvicorn.error INFO Waiting for application startup.
+12:27:55,290 uvicorn.error INFO Application startup complete.
+12:28:16,514 watchfiles.main INFO 1 change detected
+12:28:16,514 uvicorn.error WARNING WatchFiles detected changes in 'main.py'. Reloading...
+12:28:16,611 uvicorn.error INFO Shutting down
+12:28:16,713 uvicorn.error INFO Waiting for application shutdown.
+12:28:16,714 uvicorn.error INFO Application shutdown complete.
+12:28:16,715 uvicorn.error INFO Finished server process [87330]
+12:28:17,140 watchfiles.main INFO 4 changes detected
+12:28:18,868 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+12:28:18,887 uvicorn.error INFO Started server process [87373]
+12:28:18,891 uvicorn.error INFO Waiting for application startup.
+12:28:18,892 uvicorn.error INFO Application startup complete.
+12:28:45,1 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+12:28:46,200 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:28:47,712 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+12:28:48,347 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+12:28:48,353 root INFO Logged to Supabase: data=[{'id': 2380, 'user_question': 'I just told you sbout a game', 'bot_response': "I'm here to help! Could you tell me more about the game you mentioned? What aspects of it are you interested in discussing?", 'cit': '0', 'drt': '0', 'rgt': '1206.36', 'personality': 'delhi_male_friend', 'llm': '', 'timestamp': '2025-01-06T06:58:47.713976', 'relative_data': 'mem0 - ', 'email': 't@g.com'}] count=None
+12:29:55,517 watchfiles.main INFO 1 change detected
+12:29:56,211 watchfiles.main INFO 3 changes detected
+12:32:26,453 uvicorn.error INFO Shutting down
+12:32:26,557 uvicorn.error INFO Finished server process [87373]
+12:32:26,569 uvicorn.error INFO Stopping reloader process [87143]

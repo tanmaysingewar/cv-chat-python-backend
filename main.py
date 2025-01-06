@@ -83,7 +83,7 @@ class QuestionRequest(BaseModel):
     """
     question: Union[str, None] = None  # Question from the user
     llm: str = ""  # Default language model
-    personality: str = "delhi"  # Personality type
+    personality: str = ""  # Personality type
     personality_prompt: str = ""  # Personality prompt 
     last_three_responses: str = ""  # Context from last three responses
     email: str = ""  # Email address
@@ -165,11 +165,11 @@ async def cv_chat(request: QuestionRequest, background_tasks: BackgroundTasks):
 
 @app.post("/cv/v2/chat")
 async def cv_chat_v2(request: QuestionRequest, background_tasks: BackgroundTasks):
-    if not request.question or request.question.strip() == "" or request.email == "":
-            return {"error": str("Please provide a question and email")}  # Return error if invalid
+    if not request.question or request.question.strip() == "" or request.email.strip() == "" or request.personality.strip() == "":
+            return {"error": str("Please provide a question, email, personality")}  # Return error if invalid
      
     # Search for memories
-    relative_info = client_mem.search(request.question, user_id=request.email)
+    relative_info = client_mem.search(request.question, user_id=f"{request.email}+{request.personality}")
     
     # If no memories found, return an error message
     if relative_info == None or relative_info == []:
