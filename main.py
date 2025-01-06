@@ -196,7 +196,7 @@ async def cv_chat_v2(request: QuestionRequest, background_tasks: BackgroundTasks
 
     # Add the bot response to the memory
     background_tasks.add_task(
-        client_mem.add, messages, user_id=request.email
+        client_mem.add, messages, user_id=f"{request.email}+{request.personality}"
     )
 
     relative_info = f"mem0 - {relative_info}"

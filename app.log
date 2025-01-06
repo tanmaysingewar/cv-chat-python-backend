@@ -2102,3 +2102,19 @@ mem0.client.main.APIError: API request failed: {"error":"At least one of the fil
 12:32:26,453 uvicorn.error INFO Shutting down
 12:32:26,557 uvicorn.error INFO Finished server process [87373]
 12:32:26,569 uvicorn.error INFO Stopping reloader process [87143]
+12:40:12,409 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+12:40:12,436 uvicorn.error INFO Will watch for changes in these directories: ['/Users/tanmaysingewar/Projects/Area/CV_AI.ai/python-server']
+12:40:12,437 uvicorn.error INFO Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+12:40:12,438 uvicorn.error INFO Started reloader process [89847] using WatchFiles
+12:40:14,573 httpx INFO HTTP Request: GET https://api.mem0.ai/v1/ping/ "HTTP/1.1 200 OK"
+12:40:14,595 uvicorn.error INFO Started server process [89863]
+12:40:14,599 uvicorn.error INFO Waiting for application startup.
+12:40:14,600 uvicorn.error INFO Application startup complete.
+12:40:30,989 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/search/ "HTTP/1.1 200 OK"
+12:40:32,161 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:40:33,452 httpx INFO HTTP Request: POST https://api.mem0.ai/v1/memories/ "HTTP/1.1 200 OK"
+12:40:33,845 httpx INFO HTTP Request: POST https://tbqlgsjzevgyuusukzfs.supabase.co/rest/v1/chatbot_logs "HTTP/2 201 Created"
+12:40:33,856 root INFO Logged to Supabase: data=[{'id': 2382, 'user_question': 'I just told you some a game', 'bot_response': "It sounds like you mentioned a game earlier. Could you remind me of the details or let me know what specific information or help you need about the game? I'm here to help!", 'cit': '0', 'drt': '0', 'rgt': '1178.58', 'personality': 'delhi_male_friend', 'llm': '', 'timestamp': '2025-01-06T07:10:33.453381', 'relative_data': 'mem0 - ', 'email': 't@g.com'}] count=None
+12:41:22,829 uvicorn.error INFO Shutting down
+12:41:22,936 uvicorn.error INFO Finished server process [89863]
+12:41:22,944 uvicorn.error INFO Stopping reloader process [89847]
